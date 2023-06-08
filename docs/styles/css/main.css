@@ -160,6 +160,15 @@ nav {
 /*************
 ****FOOTER****
 **************/
+footer .fa-brands,
+footer .footer-heading {
+  color: #7f7e7e;
+}
+
+footer {
+  margin-top: 10rem !important;
+}
+
 .copy {
   font-family: "Fira Code", monospace;
   color: #7f7e7e;
