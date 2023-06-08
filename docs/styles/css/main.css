@@ -1,0 +1,235 @@
+@charset "UTF-8";
+body {
+  background-color: rgb(9, 3, 36);
+  margin: 0;
+  padding: 0;
+}
+
+/*FÖR NAVIGERINGSBAREN*/
+nav {
+  font-family: "Fira Code", monospace;
+}
+
+.logo {
+  max-width: 160px;
+}
+
+.navbar-toggler {
+  background-color: rgb(9, 3, 36) !important;
+  color: white;
+  border: 1px solid white;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-toggler:active {
+  border: 2px solid rgb(6, 205, 139) !important;
+  color: rgb(6, 205, 139) !important;
+}
+
+.navbar-toggler:hover {
+  border: 1.5px solid white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.navbar-toggler:hover .menu-toggler,
+.nav-link:hover,
+.active:hover,
+.show:hover {
+  color: rgb(138, 7, 209) !important;
+  transition: 0.3s ease-in-out;
+}
+
+.active {
+  color: rgb(6, 205, 139) !important;
+  transition: ease-in-out 0.3s;
+}
+
+.show {
+  color: rgb(138, 7, 209) !important;
+}
+
+/*FOR THE LITTLE DROP DOWN IN DROP DOWN*/
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0);
+  justify-content: center;
+  text-align: center;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(138, 7, 209);
+  transition: 0.3s ease-in-out;
+}
+
+/*SOCIAL MEDIA CONTAINER*/
+.bi-chat-right-text {
+  color: rgb(6, 205, 139);
+}
+
+.fa-brands {
+  color: rgb(255, 255, 255);
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.list-group-item {
+  background: rgba(0, 0, 0, 0);
+  font-size: 30px;
+}
+
+.list-group-item:hover .fa-brands {
+  color: rgb(138, 7, 209);
+  transition: 0.3s ease-in-out;
+}
+
+/*HERO CONTAINER*/
+/*HERO BILD*/
+.hero {
+  margin-top: 1rem;
+}
+
+.name {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+}
+
+.frontend {
+  color: #7f7e7e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.subtext {
+  color: rgb(6, 205, 139);
+  margin: auto 1rem auto 1rem;
+  font-family: "Fira Code", monospace;
+  font-size: 0.8rem;
+}
+
+/*FRONT PAGE LINK CONTAINER*/
+.front-link {
+  background-color: rgba(122, 5, 248, 0.957);
+  border-radius: 50px;
+  padding: 1rem;
+  border: 1px solid rgba(112, 40, 219, 0.802);
+  box-shadow: rgba(63, 3, 101, 0.174) 0px 3px 8px;
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  margin: auto;
+  max-width: 15rem;
+}
+
+.front-link:hover {
+  background-color: rgba(122, 5, 248, 0.385);
+  transition: 0.3s ease-in-out;
+}
+
+.front-link:hover .link {
+  transition: 0.3s ease-in-out;
+  color: grey;
+}
+
+.link-container {
+  margin-top: 8rem;
+}
+
+.link {
+  color: white;
+}
+
+/*************
+****FOOTER****
+**************/
+.copy {
+  font-family: "Fira Code", monospace;
+  color: #7f7e7e;
+  font-size: 1.5vw;
+}
+
+/*******
+*
+*   MEDIA QUERIES
+*
+*
+******/
+@media (min-width: 576px) {
+  .name {
+    font-size: 4rem;
+  }
+  .frontend {
+    font-size: 2rem;
+  }
+  .subtext {
+    font-size: 1.2rem;
+  }
+  .front-link {
+    margin: 1rem;
+    padding: 2rem;
+  }
+  .contact-list .social-list {
+    margin-top: -0.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .name {
+    font-size: 6rem;
+  }
+  .hero {
+    margin-top: 10rem;
+  }
+}
+/**************
+ABOUT PAGE*****
+***************/
+hr {
+  color: white;
+  height: 3px;
+}
+
+p {
+  color: #7f7e7e;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+}
+
+.contact-button input {
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 2rem;
+  border: 1px dotted rgb(6, 205, 139);
+  border-radius: 40px;
+  color: rgb(6, 205, 139);
+  padding: 0.5rem 1rem;
+  font-family: "Oxygen Mono", monospace;
+}
+
+.contact-button input:hover {
+  background-color: rgba(5, 173, 89, 0.282);
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-list .fa-brands {
+  color: grey !important;
+  font-size: 24px;
+}
+
+.contact-list .fa-brands:hover {
+  color: rgb(138, 7, 209) !important;
+}
+
+/*# sourceMappingURL=main.css.map */
