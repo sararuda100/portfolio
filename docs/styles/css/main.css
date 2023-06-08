@@ -5,6 +5,10 @@ body {
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /*FÖR NAVIGERINGSBAREN*/
 nav {
   font-family: "Fira Code", monospace;
@@ -150,6 +154,7 @@ nav {
 
 .link {
   color: white;
+  font-size: 3vw;
 }
 
 /*************
@@ -158,7 +163,7 @@ nav {
 .copy {
   font-family: "Fira Code", monospace;
   color: #7f7e7e;
-  font-size: 1.5vw;
+  font-size: 11px;
 }
 
 /*******
