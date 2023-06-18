@@ -234,7 +234,6 @@ p {
 
 .contact-button input:hover {
   background-color: rgba(5, 173, 89, 0.282);
-  color: white;
   transition: 0.3s ease-in-out;
 }
 
