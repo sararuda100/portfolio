@@ -246,4 +246,11 @@ p {
   color: rgb(138, 7, 209) !important;
 }
 
+.mini-about-img {
+  padding: 0.5rem;
+  margin: 0.2rem;
+  box-shadow: rgba(205, 202, 202, 0.12) 0px 1px 3px, rgba(251, 249, 249, 0.24) 0px 1px 2px;
+  border-radius: 4px;
+}
+
 /*# sourceMappingURL=main.css.map */
