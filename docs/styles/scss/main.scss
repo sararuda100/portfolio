@@ -2,7 +2,8 @@
 $primary: rgb(9, 3, 36);
 $primary-light: rgb(236, 178, 246);
 $secondary: rgb(6, 205, 139);
-$grey: #7f7e7e;
+$light-grey: #ccd6f6;
+$grey: #8892b0;
 $hover: rgb(138, 7, 209);
 $transparant: rgba(0, 0, 0, 0);
 
@@ -284,6 +285,7 @@ p{
     border-radius: 4px;
 }
 
-h2{
+.sub-heading{
     font-size: 24px;
+    color: $light-grey;
 }
