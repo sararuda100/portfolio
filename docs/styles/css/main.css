@@ -9,6 +9,10 @@ body {
   box-sizing: border-box;
 }
 
+main .container-fluid {
+  margin-top: 5rem;
+}
+
 /*FÖR NAVIGERINGSBAREN*/
 nav {
   font-family: "Fira Code", monospace;
@@ -247,10 +251,10 @@ p {
 }
 
 .mini-about-img {
-  padding: 0.5rem;
   margin: 0.2rem;
   box-shadow: rgba(205, 202, 202, 0.12) 0px 1px 3px, rgba(251, 249, 249, 0.24) 0px 1px 2px;
   border-radius: 4px;
+  max-width: 180px;
 }
 
 .sub-heading {
