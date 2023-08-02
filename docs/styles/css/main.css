@@ -132,7 +132,7 @@ nav {
 /*FRONT PAGE LINK CONTAINER*/
 .front-link {
   background-color: rgba(122, 5, 248, 0.957);
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 1rem;
   border: 1px solid rgba(112, 40, 219, 0.802);
   box-shadow: rgba(63, 3, 101, 0.174) 0px 3px 8px;
@@ -140,6 +140,8 @@ nav {
   font-size: 1rem;
   margin: auto;
   max-width: 15rem;
+  background-color: transparent;
+  border: 1px solid rgba(13, 220, 175, 0.802);
 }
 
 .front-link:hover {
