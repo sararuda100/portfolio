@@ -1,7 +1,8 @@
 // $primary: linear-gradient(90deg, rgba(1,1,34,1) 0%, rgba(13,3,55,1) 60%, rgba(25,3,65,1) 100%);
 $primary: rgb(9, 3, 36);
 $primary-light: rgb(236, 178, 246);
-$secondary: rgb(6, 205, 139);
+$secondary: rgb(14, 221, 152);
+$secondary-hover: rgba(7, 237, 160, 0.133);
 $light-grey: #ccd6f6;
 $grey: #8892b0;
 $hover: rgb(138, 7, 209);
@@ -161,17 +162,12 @@ nav{
     margin: auto;
     max-width: 15rem;
     background-color: transparent;
-    border: 1px solid rgba(13, 220, 175, 0.802);
+    border: 1px solid $secondary;
 }
 
 .front-link:hover{
-    background-color: rgba(122, 5, 248, 0.385);
+    background-color: $secondary-hover;
     transition: 0.3s ease-in-out;
-}
-
-.front-link:hover .link{
-    transition: 0.3s ease-in-out;
-    color: grey;
 }
 
 .link-container{
@@ -179,7 +175,7 @@ nav{
 }
 
 .link{
-    color: white;
+    color: $secondary;
     font-size: 14px;
     padding: 1rem 1.7rem;
 }
@@ -281,7 +277,7 @@ p{
 }
 
 .contact-button input:hover{
-    background-color: rgba(5, 173, 89, 0.282);
+    background-color: $secondary-hover;
     transition: 0.3s ease-in-out;
 }
 
