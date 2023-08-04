@@ -36,9 +36,9 @@ p{
     font-family: $p-font;
 }
 
-main .container-fluid{
-    margin-top: 5rem;
-}
+// main .container-fluid{
+//     margin-top: 5rem;
+// }
 
 /*FÖR NAVIGERINGSBAREN*/
 
@@ -270,6 +270,10 @@ footer{
 ABOUT PAGE*****
 ***************/
 
+.article{
+    margin-bottom: 6rem;
+}
+
 .hero-text{
     margin-right: 5rem;
 }
@@ -306,7 +310,7 @@ ABOUT PAGE*****
     left: 25px; 
     right: -25px;
     bottom: -25px;
-    border: 4px solid $secondary;
+    border: 2px solid $secondary;
     border-radius: 7px;
     pointer-events: none; /* Ensures the wrapper doesn't interfere with mouse events */
     transition: border 0.3s ease-in-out;
@@ -318,6 +322,29 @@ ABOUT PAGE*****
     left: 20px; 
     right: -20px;
     bottom: -20px;
+}
+
+/*******PART DESIGNER PART CODER LIST ITEMS
+*******************************************/
+
+.designer{
+    margin-bottom: 2rem;
+
+    .list-unstyled{
+        .list-item{
+            color: $grey;
+        }
+    }
+}
+
+.coder{
+    margin-bottom: 2rem;
+    
+    .list-unstyled{
+        .list-item{
+            color: $grey;
+        }
+    }
 }
 
 /***********************
