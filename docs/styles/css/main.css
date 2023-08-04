@@ -21,6 +21,10 @@ p {
   font-family: "Inter", sans-serif;
 }
 
+main .container-fluid {
+  margin-top: 5rem;
+}
+
 /*FÖR NAVIGERINGSBAREN*/
 nav {
   font-family: "Fira Code", monospace;

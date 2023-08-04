@@ -36,9 +36,9 @@ p{
     font-family: $p-font;
 }
 
-// main .container-fluid{
-//     margin-top: 5rem;
-// }
+main .container-fluid{
+    margin-top: 5rem;
+}
 
 /*FÖR NAVIGERINGSBAREN*/
 
@@ -339,7 +339,7 @@ ABOUT PAGE*****
 
 .coder{
     margin-bottom: 2rem;
-    
+
     .list-unstyled{
         .list-item{
             color: $grey;
@@ -350,7 +350,6 @@ ABOUT PAGE*****
 /***********************
 **********SAY HELLO*****
 ************************/
-
 .contact-button input{
     background-color: $transparant;
     margin-top: 6rem;
