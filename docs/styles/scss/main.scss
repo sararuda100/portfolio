@@ -24,6 +24,18 @@ padding: 0;
     box-sizing: border-box;
 }
 
+hr{
+    color: white;
+    height: 3px;
+}
+
+p{
+    color: $grey;
+    font-family: $secondary-font;
+    font-size: 1em;
+    font-family: $p-font;
+}
+
 main .container-fluid{
     margin-top: 5rem;
 }
@@ -124,9 +136,10 @@ nav{
 }
 
 
-/*HERO CONTAINER*/
-
-/*HERO BILD*/
+/***********************
+*******HOME PAGE********
+***********************
+***********************/
 .hero{
     margin-top: 2.5rem;
 }
@@ -256,17 +269,6 @@ footer{
 /**************
 ABOUT PAGE*****
 ***************/
-hr{
-    color: white;
-    height: 3px;
-}
-
-p{
-    color: $grey;
-    font-family: $secondary-font;
-    font-size: 1em;
-    font-family: $p-font;
-}
 
 .contact-button input{
     background-color: $transparant;
@@ -292,20 +294,9 @@ p{
     color: $hover !important;
 }
 
-.mini-about-img{
-    margin: 0.2rem;
-    box-shadow: rgba(205, 202, 202, 0.12) 0px 1px 3px, rgba(251, 249, 249, 0.24) 0px 1px 2px;
-    border-radius: 4px;
-    max-width: 180px;
-}
-
 .sub-heading{
     font-size: 24px;
     color: $light-grey;
-}
-
-.hidden-img{
-    display: none;
 }
 
 .random-fact-list{
@@ -314,7 +305,6 @@ p{
 
 /*******************************************
 ********BILD OCH BORDER, SAMT HOVER*********
-********************************************
 ********************************************/
 
 .img-container {
