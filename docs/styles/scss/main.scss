@@ -311,3 +311,45 @@ p{
 .random-fact-list{
     color: $grey;
 }
+
+/****THE IMAGE Of ME, AND HOVER****/
+.img-container {
+    display: inline-block;
+    width: 75%;
+    overflow: hidden;
+}
+
+.big-about-img {
+    display: block;
+    content: url('/docs/images/IMG_5407.JPG');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: content 0.3s ease-in-out;
+}
+
+.img-container:hover .big-about-img {
+    content: url('/docs/images/IMG_5408.JPG');
+}
+
+.image-wrapper::after{
+    content: "";
+    border: 8px solid orange;
+    z-index: 1;
+    background-color: green;
+    height: 200px;
+    width: 300px;
+}
+
+.image-wrapper {
+    position: absolute;
+    top: 20px; /* Adjust the offset from the top */
+    left: 20px; /* Adjust the offset from the left */
+    right: 20px; /* Adjust the offset from the right */
+    bottom: 20px; /* Adjust the offset from the bottom */
+    border: 8px solid orange;
+    z-index: 1;
+    pointer-events: none; /* Ensures the wrapper doesn't interfere with mouse events */
+    transition: border 0.3s ease-in-out;
+}
