@@ -132,7 +132,7 @@ nav {
 /*FRONT PAGE LINK CONTAINER*/
 .front-link {
   background-color: rgba(122, 5, 248, 0.957);
-  border-radius: 10px;
+  border-radius: 7px;
   padding: 1rem;
   border: 1px solid rgba(112, 40, 219, 0.802);
   box-shadow: rgba(63, 3, 101, 0.174) 0px 3px 8px;
@@ -276,13 +276,13 @@ p {
   color: #8892b0;
 }
 
-/****THE IMAGE Of ME, AND HOVER****/
+/********BILD OCH BORDER, SAMT HOVER*******
+********************************************
+********************************************/
 .img-container {
   display: inline-block;
   width: 75%;
-  /* Add height or padding-top to maintain aspect ratio of the image */
-  /* For example: padding-top: 56.25%; (16:9 aspect ratio) */
-  overflow: hidden;
+  position: relative; /* Set the container to be a positioning context */
 }
 
 .big-about-img {
@@ -291,13 +291,34 @@ p {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 100%;
-  padding-top: 100%; /* 16:9 aspect ratio */
-  transition: background-image 0.3s ease-in-out;
+  padding-top: 99.25%; /* 16:9 aspect ratio */
+  border-radius: 7px;
+  transition: background-image 0.2s ease-in-out;
+  position: relative; /* Set to relative to position the .image-wrapper */
 }
 
 .img-container:hover .big-about-img {
   background-image: url("/docs/images/IMG_5408.JPG");
+}
+
+.image-wrapper {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: -25px;
+  bottom: -25px;
+  border: 4px solid rgb(14, 221, 152);
+  border-radius: 7px;
+  pointer-events: none; /* Ensures the wrapper doesn't interfere with mouse events */
+  transition: border 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.img-container:hover .image-wrapper {
+  top: 20px;
+  left: 20px;
+  right: -20px;
+  bottom: -20px;
 }
 
 /*# sourceMappingURL=main.css.map */
