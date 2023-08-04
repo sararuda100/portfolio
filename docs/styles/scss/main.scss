@@ -9,6 +9,7 @@ $hover: rgb(138, 7, 209);
 $transparant: rgba(0, 0, 0, 0);
 
 $primary-font: studiofeixen-variable, studiofeixen, Arial, Helvetica, sans-serif;
+$p-font: 'Inter', sans-serif;
 $secondary-font: 'Courier New', Courier, monospace;
 
 body{
@@ -263,7 +264,8 @@ hr{
 p{
     color: $grey;
     font-family: $secondary-font;
-    font-size: 1rem;
+    font-size: 1em;
+    font-family: $p-font;
 }
 
 .contact-button input{
@@ -302,31 +304,31 @@ p{
     color: $light-grey;
 }
 
-.over-lay-container{
-    position: relative;
-}
+// .over-lay-container{
+//     position: relative;
+// }
 
-/* Styles for the image container */
-.img-container {
-  position: relative;
-  display: inline-block;
-  border-radius: 10px;
+// /* Styles for the image container */
+// .img-container {
+//   position: relative;
+//   display: inline-block;
+//   border-radius: 10px;
 
-}
+// }
 
-.img-container img{
-    border-radius: 10px;
-}
+// .img-container img{
+//     border-radius: 10px;
+// }
 
-/* Styles for the overlay */
-.img-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 75%;
-  height: 100%;
-  border-radius: 10px;
-  background-color: rgba(6, 200, 129, 0.478); /* Green overlay color with 50% opacity */
-}
+// /* Styles for the overlay */
+// .img-container::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 75%;
+//   height: 100%;
+//   border-radius: 10px;
+//   background-color: rgba(6, 200, 129, 0.478); /* Green overlay color with 50% opacity */
+// }
 

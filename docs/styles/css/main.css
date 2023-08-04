@@ -228,7 +228,8 @@ hr {
 p {
   color: #8892b0;
   font-family: "Courier New", Courier, monospace;
-  font-size: 1rem;
+  font-size: 1em;
+  font-family: "Inter", sans-serif;
 }
 
 .contact-button input {
@@ -265,33 +266,6 @@ p {
 .sub-heading {
   font-size: 24px;
   color: #ccd6f6;
-}
-
-.over-lay-container {
-  position: relative;
-}
-
-/* Styles for the image container */
-.img-container {
-  position: relative;
-  display: inline-block;
-  border-radius: 10px;
-}
-
-.img-container img {
-  border-radius: 10px;
-}
-
-/* Styles for the overlay */
-.img-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 75%;
-  height: 100%;
-  border-radius: 10px;
-  background-color: rgba(6, 200, 129, 0.478); /* Green overlay color with 50% opacity */
 }
 
 /*# sourceMappingURL=main.css.map */
