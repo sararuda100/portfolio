@@ -36,7 +36,7 @@ window.addEventListener('load', function(){
     },
     options: {
         title: {
-        display: true,
+        display: false,
         text: "Part designer part coder"
         }
     }
