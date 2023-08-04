@@ -268,4 +268,8 @@ p {
   color: #ccd6f6;
 }
 
+.hidden-img {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */
