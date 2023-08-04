@@ -161,6 +161,7 @@ nav {
 .link {
   color: white;
   font-size: 14px;
+  padding: 2rem 3rem;
 }
 
 /*************
@@ -272,8 +273,11 @@ p {
 .img-container {
   position: relative;
   display: inline-block;
-  /* Optional: Add some padding or margin to the container if needed */
-  padding: 10px;
+  border-radius: 10px;
+}
+
+.img-container img {
+  border-radius: 10px;
 }
 
 /* Styles for the overlay */
@@ -282,9 +286,10 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 75%;
   height: 100%;
-  background-color: rgba(0, 128, 0, 0.5); /* Green overlay color with 50% opacity */
+  border-radius: 10px;
+  background-color: rgba(6, 200, 129, 0.478); /* Green overlay color with 50% opacity */
 }
 
 /*# sourceMappingURL=main.css.map */
