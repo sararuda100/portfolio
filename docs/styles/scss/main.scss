@@ -181,7 +181,7 @@ nav{
 .link{
     color: white;
     font-size: 14px;
-    padding: 2rem 3rem;
+    padding: 1rem 1.7rem;
 }
 
 
@@ -226,11 +226,20 @@ footer{
 
     .front-link{
         margin: 1rem;
-        padding: 2rem;
+    }
+
+    .link{
+        padding: 1.5rem 2rem;
     }
 
     .contact-list .social-list{
         margin-top: -0.5rem;
+    }
+}
+
+@media (min-width: 768px){
+    .link{
+        padding: 1.5rem 3rem;
     }
 }
 
