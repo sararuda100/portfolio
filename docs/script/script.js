@@ -18,12 +18,11 @@ window.addEventListener('load', function(){
     });
 
     //pie chart
-    var xValues = ["Designer", "Coder", "Eating"];
-    var yValues = [20, 50, 30];
+    var xValues = ["Designer", "Coder"];
+    var yValues = [35, 65];
     var barColors = [
         "rgb(6, 205, 139)",
-        "#ccd6f6",
-        "#2b5760"
+        "#ccd6f6"
     ];
 
     new Chart("myChart", {
