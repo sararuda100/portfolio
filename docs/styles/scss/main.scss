@@ -270,39 +270,6 @@ footer{
 ABOUT PAGE*****
 ***************/
 
-.contact-button input{
-    background-color: $transparant;
-    margin-top: 6rem;
-    border: 1px dotted $secondary;
-    border-radius: 40px;
-    color: $secondary;
-    padding: 0.5rem 1rem;
-    font-family: 'Oxygen Mono', monospace;
-}
-
-.contact-button input:hover{
-    background-color: $secondary-hover;
-    transition: 0.3s ease-in-out;
-}
-
-.contact-list .fa-brands{
-    color: grey !important;
-    font-size: 24px;
-}
-
-.contact-list .fa-brands:hover{
-    color: $hover !important;
-}
-
-.sub-heading{
-    font-size: 24px;
-    color: $light-grey;
-}
-
-.random-fact-list{
-    color: $grey;
-}
-
 /*******************************************
 ********BILD OCH BORDER, SAMT HOVER*********
 ********************************************/
@@ -349,3 +316,39 @@ ABOUT PAGE*****
     bottom: -20px;
 }
 
+/***********************
+**********SAY HELLO*****
+************************/
+
+.contact-button input{
+    background-color: $transparant;
+    margin-top: 6rem;
+    border: 1px dotted $secondary;
+    border-radius: 40px;
+    color: $secondary;
+    padding: 0.5rem 1rem;
+    font-family: 'Oxygen Mono', monospace;
+}
+
+.contact-button input:hover{
+    background-color: $secondary-hover;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-list .fa-brands{
+    color: grey !important;
+    font-size: 24px;
+}
+
+.contact-list .fa-brands:hover{
+    color: $hover !important;
+}
+
+.sub-heading{
+    font-size: 24px;
+    color: $light-grey;
+}
+
+.random-fact-list{
+    color: $grey;
+}
