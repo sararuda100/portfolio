@@ -354,7 +354,7 @@ ABOUT PAGE*****
 /***********************
 **********SAY HELLO*****
 ************************/
-.contact-button input{
+.contact-button{
     background-color: $transparant;
     margin-top: 6rem;
     border: 1px dotted $secondary;
@@ -364,7 +364,7 @@ ABOUT PAGE*****
     font-family: 'Oxygen Mono', monospace;
 }
 
-.contact-button input:hover{
+.contact-button:hover{
     background-color: $secondary-hover;
     transition: 0.3s ease-in-out;
 }

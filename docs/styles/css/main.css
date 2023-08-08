@@ -310,7 +310,7 @@ ABOUT PAGE*****
 /***********************
 **********SAY HELLO*****
 ************************/
-.contact-button input {
+.contact-button {
   background-color: rgba(0, 0, 0, 0);
   margin-top: 6rem;
   border: 1px dotted rgb(14, 221, 152);
@@ -320,7 +320,7 @@ ABOUT PAGE*****
   font-family: "Oxygen Mono", monospace;
 }
 
-.contact-button input:hover {
+.contact-button:hover {
   background-color: rgba(7, 237, 160, 0.133);
   transition: 0.3s ease-in-out;
 }
