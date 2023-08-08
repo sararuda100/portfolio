@@ -386,3 +386,16 @@ ABOUT PAGE*****
 .random-fact-list{
     color: $grey;
 }
+
+
+/***********************
+********** PROJECTSS *****
+************************/
+.section{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+}
+
+.card-link{
+    height: 200px;
+}
