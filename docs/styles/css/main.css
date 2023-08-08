@@ -282,6 +282,7 @@ ABOUT PAGE*****
   pointer-events: none; /* Ensures the wrapper doesn't interfere with mouse events */
   transition: border 0.3s ease-in-out;
   z-index: -1;
+  background-color: red;
 }
 
 .img-container:hover .image-wrapper {
@@ -353,6 +354,7 @@ ABOUT PAGE*****
 
 .card-link {
   height: 200px;
+  width: 200px;
 }
 
 /*# sourceMappingURL=main.css.map */
