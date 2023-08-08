@@ -14,6 +14,10 @@ hr {
   height: 3px;
 }
 
+.h3-heading {
+  color: rgba(14, 221, 152, 0.79);
+}
+
 p {
   color: #8892b0;
   font-family: "Courier New", Courier, monospace;
