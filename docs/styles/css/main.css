@@ -253,7 +253,7 @@ ABOUT PAGE*****
 
 .big-about-img {
   display: block;
-  background-image: url("/docs/images/IMG_5407.JPG");
+  background-image: url("/images/IMG_5407.JPG");
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -264,7 +264,7 @@ ABOUT PAGE*****
 }
 
 .img-container:hover .big-about-img {
-  background-image: url("/docs/images/IMG_5408.JPG");
+  background-image: url("/images/IMG_5408.JPG");
 }
 
 .image-wrapper {
