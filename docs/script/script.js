@@ -1,5 +1,4 @@
 window.addEventListener('load', function(){
-    console.log('test');
     
     // Get the current page URL
     const currentPageUrl = window.location.href;
@@ -26,19 +25,21 @@ window.addEventListener('load', function(){
     ];
 
     new Chart("myChart", {
-    type: "pie",
-    data: {
-        labels: xValues,
-        datasets: [{
-        backgroundColor: barColors,
-        data: yValues
-        }]
-    },
-    options: {
-        title: {
-        display: false,
-        text: "Part designer part coder"
+        type: "pie",
+        data: {
+            labels: xValues,
+            datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+            }]
+        },
+        options: {
+            title: {
+            display: false,
+            text: "Part designer part coder"
+            }
         }
-    }
     });
 });
+
+
