@@ -356,4 +356,14 @@ ABOUT PAGE*****
   width: 200px;
 }
 
+.card {
+  color: rgb(14, 221, 152);
+  background-color: transparent;
+}
+
+.card-title {
+  text-decoration: none;
+  font-size: 20px;
+}
+
 /*# sourceMappingURL=main.css.map */
