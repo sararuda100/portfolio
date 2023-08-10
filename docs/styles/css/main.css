@@ -263,7 +263,7 @@ ABOUT PAGE*****
   width: 100%;
   padding-top: 99.25%; /* 16:9 aspect ratio */
   border-radius: 7px;
-  transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.3s ease-in-out;
   position: relative; /* Set to relative to position the .image-wrapper */
 }
 
