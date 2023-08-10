@@ -353,6 +353,10 @@ ABOUT PAGE*****
 
 .card-link {
   /* Your existing styles */
+  height: auto;
+  width: 300px;
+  margin-bottom: 4rem;
+  text-decoration: none;
   position: relative; /* Needed for absolute positioning of overlay and text */
   overflow: hidden; /* Prevents child elements from overflowing */
 }
@@ -372,12 +376,16 @@ ABOUT PAGE*****
 }
 
 .card {
-  /* Your existing styles */
+  color: #8892b0;
+  background-color: transparent;
   position: relative; /* Needed for z-index to work properly */
+}
+.card img {
+  box-shadow: 0px 5px 10px 0px rgba(46, 5, 111, 0.7);
 }
 
 .card:hover .card-overlay {
-  opacity: 0.4; /* Adjust the opacity value as desired */
+  opacity: 0.8; /* Adjust the opacity value as desired */
 }
 
 .kort-titel {
@@ -393,6 +401,7 @@ ABOUT PAGE*****
 }
 
 .card:hover .kort-titel {
+  display: flex !important;
   display: block; /* Show the title on hover */
 }
 
