@@ -340,6 +340,8 @@ ABOUT PAGE*****
 .section{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1.5fr));  
+  max-width: 900px;
+  margin: auto;
 }
 
 .card-link {
@@ -367,51 +369,33 @@ ABOUT PAGE*****
 }
 
 .card {
-    color: $grey;
     background-color: transparent;
     position: relative; /* Needed for z-index to work properly */
     
     img{
-        box-shadow: 0px 5px 10px 0px rgba(46, 5, 111, 0.7);
+        box-shadow: 0px 5px 10px 0px rgba(7, 225, 174, 0.7);
     }
 }
 
 .card:hover .card-overlay {
-    opacity: 0.8; /* Adjust the opacity value as desired */
+    opacity: 0.8;
 }
 
 .kort-titel {
-    /* Your existing styles */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 5; /* Make sure it's above the overlay */
-    display: none; /* Hidden by default */
-    color: white; /* Text color */
+    z-index: 5;
+    display: none;
+    color: white; 
     font-family: 'Fira Code', monospace;
 }
 
 .card:hover .kort-titel {
     display: flex !important;
-    display: block; /* Show the title on hover */
+    display: block;
 }
-
-// .card-description {
-//     /* Your existing styles */
-//     position: absolute;
-//     bottom: 20px;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     z-index: 5; /* Make sure it's above the overlay */
-//     display: none; /* Hidden by default */
-//     color: white; /* Text color */
-// }
-
-.card:hover .card-description {
-    display: block; /* Show the description on hover */
-}
-
 
 /*******
 *
@@ -459,7 +443,7 @@ ABOUT PAGE*****
         padding: 1.5rem 3rem;
     }
     .article{
-        max-width: 860px;
+        max-width: 900px;
         margin-top: 4rem;
         margin-bottom: 10rem !important;
     }
