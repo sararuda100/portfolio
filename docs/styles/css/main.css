@@ -25,10 +25,6 @@ p {
   font-family: "Inter", sans-serif;
 }
 
-main .container-fluid {
-  margin-top: 5rem;
-}
-
 /*FÖR NAVIGERINGSBAREN*/
 nav {
   font-family: "Fira Code", monospace;
@@ -125,7 +121,7 @@ nav {
 ***********************
 ***********************/
 .hero {
-  margin-top: 2.5rem;
+  margin-top: 5rem;
 }
 
 .name {

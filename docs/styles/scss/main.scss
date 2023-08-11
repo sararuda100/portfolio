@@ -40,9 +40,10 @@ p{
     font-family: $p-font;
 }
 
-main .container-fluid{
-    margin-top: 5rem;
-}
+//ska sättas först vid större skärmar
+// main .container-fluid{
+//     margin-top: 5rem;
+// }
 
 /*FÖR NAVIGERINGSBAREN*/
 
@@ -144,8 +145,9 @@ nav{
 *******HOME PAGE********
 ***********************
 ***********************/
+//front-side text
 .hero{
-    margin-top: 2.5rem;
+    margin-top: 5rem;
 }
 
 .name{
