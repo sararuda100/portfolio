@@ -217,6 +217,9 @@ footer {
   .contact-list .social-list {
     margin-top: -0.5rem;
   }
+  .section {
+    padding: 1.5rem;
+  }
 }
 @media (min-width: 768px) {
   .link {
