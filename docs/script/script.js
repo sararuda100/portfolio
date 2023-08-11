@@ -41,38 +41,23 @@ window.addEventListener('load', function(){
         }
     });
 
-    // const randomFactsContainer = document.querySelector('.random-facts');
-
-    // const observer = new IntersectionObserver(entries => {
-    // entries.forEach(entry => {
-    //     if (entry.isIntersecting) {
-    //     entry.target.classList.add('hover-3'); // Add the class "hover-2" to trigger the animation
-    //     console.log('inne i view');
-    //     } else {
-    //     entry.target.classList.remove('hover-3');
-    //     }
-    // });
-    // });
-
-    // observer.observe(randomFactsContainer);
-
     const randomFactsContainer = document.querySelector('.random-facts');
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('hover-3'); // Add the class "hover-3" to trigger the animation
-            console.log('inne i view');
-            entry.target.classList.remove('opac');
-        } else {
-            entry.target.classList.remove('hover-3');
-        }
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('hover-3'); // Add the class "hover-3" to trigger the animation
+                console.log('inne i view');
+                entry.target.classList.remove('opac');
+            } else {
+                entry.target.classList.remove('hover-3');
+            }
+        });
+    }, {
+        rootMargin: '-300px 0px 0px 0px' //asjust height when triggered
     });
-}, {
-    rootMargin: '-250px 250px 0px 0px' //asjust height when triggered
-});
 
-observer.observe(randomFactsContainer);
+    observer.observe(randomFactsContainer);
 
 });
 
