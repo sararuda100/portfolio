@@ -6,6 +6,7 @@ $secondary-hover: rgba(7, 237, 160, 0.133);
 $light-grey: #ccd6f6;
 $grey: #8892b0;
 $hover: rgb(138, 7, 209);
+$purple: rgb(98, 7, 209);
 $transparant: rgba(0, 0, 0, 0);
 
 $primary-font: studiofeixen-variable, studiofeixen, Arial, Helvetica, sans-serif;
@@ -330,8 +331,44 @@ ABOUT PAGE*****
     color: $light-grey;
 }
 
+/**
+*
+* FOR RANDOM FACTS
+*
+*****/
+
 .random-fact-list{
     color: $grey;
+}
+.asymmetric {
+	position: relative;
+	background-color: $purple !important;
+}
+
+.asymmetric::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: $purple !important;
+	transform-origin: top left;
+	transform: skewY(-3deg);
+	z-index: -10;
+}
+
+.asymmetric::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: $purple !important;
+	transform-origin: bottom left;
+	transform: skewY(3deg);
+	z-index: -10;
 }
 
 
