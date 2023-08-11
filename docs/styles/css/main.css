@@ -310,13 +310,13 @@ ABOUT PAGE*****
 
 .section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  gap: 1rem;
 }
 
 .card-link {
   height: auto;
   width: 300px;
-  margin-bottom: 2rem;
   text-decoration: none;
   position: relative; /* Needed for absolute positioning of overlay and text */
   overflow: hidden; /* Prevents child elements from overflowing */
