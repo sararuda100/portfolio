@@ -40,13 +40,7 @@ p{
     font-family: $p-font;
 }
 
-//ska sättas först vid större skärmar
-// main .container-fluid{
-//     margin-top: 5rem;
-// }
-
 /*FÖR NAVIGERINGSBAREN*/
-
 nav{
     font-family: 'Fira Code', monospace;
 }
@@ -220,61 +214,6 @@ footer{
     font-size: 11px;
 }
 
-/*******
-*
-*   MEDIA QUERIES
-*
-*
-******/
-
-@media (min-width: 576px){
-    .name{
-        font-size: 4rem;
-    }
-
-    .frontend{
-        font-size: 2rem;
-    }
-
-    .subtext{
-    font-size: 1.2rem;
-}
-
-    .front-link{
-        margin: 1rem;
-    }
-
-    .link{
-        padding: 1.5rem 2rem;
-    }
-
-    .contact-list .social-list{
-        margin-top: -0.5rem;
-    }
-
-    .section{
-        padding: 1.5rem;
-    }
-}
-
-@media (min-width: 768px){
-    .link{
-        padding: 1.5rem 3rem;
-    }
-}
-
-@media (min-width: 992px){
-
-     .name{
-        font-size: 6rem;
-    }
-
-    .hero{
-        margin-top: 10rem;
-    }
-
-}
-
 
 /**************
 ABOUT PAGE*****
@@ -296,6 +235,7 @@ ABOUT PAGE*****
     display: inline-block;
     width: 75%;
     position: relative; /* Set the container to be a positioning context */
+    margin-top: 4rem;
 }
 
 .big-about-img {
@@ -471,3 +411,68 @@ ABOUT PAGE*****
 .card:hover .card-description {
     display: block; /* Show the description on hover */
 }
+
+
+/*******
+*
+*   MEDIA QUERIES
+*
+*
+******/
+
+@media (min-width: 576px){
+    .name{
+        font-size: 4rem;
+    }
+
+    .frontend{
+        font-size: 2rem;
+    }
+
+    .subtext{
+    font-size: 1.2rem;
+}
+
+    .front-link{
+        margin: 1rem;
+    }
+
+    .link{
+        padding: 1.5rem 2rem;
+    }
+
+    .contact-list .social-list{
+        margin-top: -0.5rem;
+    }
+
+    .section{
+        padding: 1.5rem;
+    }
+
+    .img-container{
+        margin-top: 6rem;
+    }
+}
+
+@media (min-width: 768px){
+    .link{
+        padding: 1.5rem 3rem;
+    }
+    .article{
+        max-width: 860px;
+        margin-top: 4rem;
+    }
+}
+
+@media (min-width: 992px){
+
+     .name{
+        font-size: 6rem;
+    }
+
+    .hero{
+        margin-top: 10rem;
+    }
+
+}
+
