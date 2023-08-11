@@ -306,22 +306,6 @@ ABOUT PAGE*****
   color: #8892b0;
 }
 
-.hover-3 {
-  --b: 0.1em; /* the thickness of the line */
-  --c: #5710c1; /* the color */
-  color: rgba(238, 9, 9, 0);
-  padding-block: var(--b);
-  background: linear-gradient(var(--c) 50%, #000 0) 0% calc(100% - var(--_p, 0%))/100% 200%, linear-gradient(var(--c) 0 0) 0% var(--_p, 0%)/var(--_p, 0%) var(--b) no-repeat;
-  -webkit-background-clip: text, padding-box;
-  background-clip: text, padding-box;
-  transition: 0.3s var(--_s, 0s) linear, background-size 0.3s calc(0.3s - var(--_s, 0s));
-}
-
-.hover-3:hover {
-  --_p: 100%;
-  --_s: .3s;
-}
-
 .hover-2 {
   --c: #21e28e; /* the color */
   --b: .1em; /* border length*/
@@ -333,12 +317,18 @@ ABOUT PAGE*****
   background: conic-gradient(at left var(--d) bottom var(--d), rgba(0, 0, 0, 0) 90deg, rgba(255, 255, 255, 0.3) 0 225deg, rgba(255, 255, 255, 0.6) 0) border-box, conic-gradient(at left var(--_s) bottom var(--_s), rgba(0, 0, 0, 0) 90deg, var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b)) border-box;
   transform: translate(calc(var(--d) / -1), var(--d));
   clip-path: polygon(var(--d) 0%, var(--d) 0%, 100% 0%, 100% calc(100% - var(--d)), 100% calc(100% - var(--d)), var(--d) calc(100% - var(--d)));
+  opacity: 0.3;
   transition: 0.5s;
 }
 
-.hover-2:hover {
+.hover-3 {
   transform: translate(0, 0);
   clip-path: polygon(0% var(--d), var(--d) 0%, 100% 0%, 100% calc(100% - var(--d)), calc(100% - var(--d)) 100%, 0% 100%);
+  opacity: 1;
+}
+
+.opac {
+  opacity: 0.3;
 }
 
 /***********************

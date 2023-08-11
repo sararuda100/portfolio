@@ -371,23 +371,23 @@ ABOUT PAGE*****
 // 	z-index: -10;
 // }
 
-.hover-3 {
-  --b: 0.1em;   /* the thickness of the line */
-  --c: #5710c1; /* the color */
+// .hover-3 {
+//   --b: 0.1em;   /* the thickness of the line */
+//   --c: #5710c1; /* the color */
   
-  color: #ee090900;
-  padding-block: var(--b);
-  background: 
-    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
-    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
-  -webkit-background-clip: text,padding-box;
-          background-clip: text,padding-box;
-  transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
-}
-.hover-3:hover {
-  --_p: 100%;
-  --_s: .3s;
-}
+//   color: #ee090900;
+//   padding-block: var(--b);
+//   background: 
+//     linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+//     linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+//   -webkit-background-clip: text,padding-box;
+//           background-clip: text,padding-box;
+//   transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+// }
+// .hover-3:hover {
+//   --_p: 100%;
+//   --_s: .3s;
+// }
 
 .hover-2 {
   --c: #21e28e; /* the color */
@@ -414,9 +414,10 @@ ABOUT PAGE*****
      100% calc(100% - var(--d)),
      var(--d) calc(100% - var(--d))
     );
+    opacity: 0.3;
   transition: 0.5s;
 }
-.hover-2:hover {
+.hover-3 {
   transform: translate(0,0);
   clip-path: 
     polygon(
@@ -427,6 +428,12 @@ ABOUT PAGE*****
      calc(100% - var(--d)) 100%, 
      0% 100%
    );
+
+   opacity: 1;
+}
+
+.opac{
+    opacity: 0.3;
 }
 
 /***********************
