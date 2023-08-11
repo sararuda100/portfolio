@@ -337,17 +337,19 @@ ABOUT PAGE*****
 /***********************
 ********** PROJECTSS *****
 ************************/
+.project-margin{
+    margin-bottom: 2rem !important;
+}
+
 .section{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1.5fr));  
-  max-width: 900px;
-  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
 }
 
 .card-link {
     height: auto;
     width: 300px;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     text-decoration: none;
     position: relative; /* Needed for absolute positioning of overlay and text */
     overflow: hidden; /* Prevents child elements from overflowing */
@@ -371,7 +373,7 @@ ABOUT PAGE*****
     position: relative; /* Needed for z-index to work properly */
     
     img{
-        box-shadow: 0px 5px 10px 0px rgba(7, 225, 174, 0.7);
+        box-shadow: 0px 10px 15px 0px rgba(152, 7, 225, 0.896);
     }
 }
 
@@ -429,6 +431,8 @@ ABOUT PAGE*****
 
     .section{
         padding: 1.5rem;
+        max-width: 900px;
+        margin: auto;
     }
 
     .img-container{
@@ -444,6 +448,10 @@ ABOUT PAGE*****
         max-width: 900px;
         margin-top: 4rem;
         margin-bottom: 10rem !important;
+    }
+
+    .project-margin{
+        margin-bottom: 3rem !important;
     }
 }
 
