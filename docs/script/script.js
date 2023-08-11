@@ -69,7 +69,7 @@ const observer = new IntersectionObserver(entries => {
         }
     });
 }, {
-    rootMargin: '-250px 0px 0px 0px' // Adjust the rootMargin to trigger the animation when it's 100px into view
+    rootMargin: '-250px 250px 0px 0px' //asjust height when triggered
 });
 
 observer.observe(randomFactsContainer);
