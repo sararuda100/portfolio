@@ -11,6 +11,7 @@ window.addEventListener('load', function(){
     // Adding hover event listener
     imgContainer.addEventListener('mouseover', () => {
         imgContainer.style.backgroundImage = `url(${hoverImageUrl})`;
+        imgContainer.style.borderRadius = '7px';
     });
 
     // Resetting the background image on mouseout
