@@ -74,7 +74,7 @@ window.addEventListener('load', function(){
             }
         });
     }, {
-        rootMargin: '-300px 0px 0px 0px' //asjust height when triggered
+        rootMargin: '-200px 0px 0px 0px' //asjust height when triggered
     });
 
     observer.observe(randomFactsContainer);
