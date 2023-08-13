@@ -1,5 +1,24 @@
 window.addEventListener('load', function(){
     
+   // Get the element that needs the hover image change
+    const imgContainer = document.querySelector('.img-container');
+
+    // Preload the hover image
+    const hoverImageUrl = 'https://github.com/sararuda100/portfolio/blob/main/docs/images/IMG_5408.JPG?raw=true';
+    const hoverImage = new Image();
+    hoverImage.src = hoverImageUrl;
+
+    // Adding hover event listener
+    imgContainer.addEventListener('mouseover', () => {
+        imgContainer.style.backgroundImage = `url(${hoverImageUrl})`;
+    });
+
+    // Resetting the background image on mouseout
+    imgContainer.addEventListener('mouseout', () => {
+        imgContainer.style.backgroundImage = '';
+    });
+
+
     // Get the current page URL
     const currentPageUrl = window.location.href;
 

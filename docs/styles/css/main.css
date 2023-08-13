@@ -229,7 +229,7 @@ ABOUT PAGE*****
   width: 100%;
   padding-top: 99.25%; /* 16:9 aspect ratio */
   border-radius: 7px;
-  transition: background-image 0.3s ease-in-out;
+  transition: background-image 0.3s ease-in;
   position: relative; /* Set to relative to position the .image-wrapper */
 }
 
@@ -279,7 +279,7 @@ ABOUT PAGE*****
 .contact-button {
   background-color: rgba(0, 0, 0, 0);
   margin-top: 6rem;
-  border: 1px dotted rgb(14, 221, 152);
+  border: 1.5px dotted rgb(14, 221, 152);
   border-radius: 40px;
   color: rgb(14, 221, 152);
   padding: 0.5rem 1rem;

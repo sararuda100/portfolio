@@ -255,7 +255,7 @@ ABOUT PAGE*****
     width: 100%;
     padding-top: 99.25%; /* 16:9 aspect ratio */
     border-radius: 7px;
-    transition: background-image 0.3s ease-in-out;
+    transition: background-image 0.3s ease-in;
     position: relative; /* Set to relative to position the .image-wrapper */
 }
 
@@ -282,6 +282,48 @@ ABOUT PAGE*****
     right: -20px;
     bottom: -20px;
 }
+// .img-container {
+//     display: inline-block;
+//     width: 75%;
+//     position: relative;
+//     margin-top: 4rem;
+// }
+
+// .big-about-img {
+//     display: block;
+//     background-image: url('https://raw.githubusercontent.com/sararuda100/portfolio/main/docs/images/IMG_5407.JPG');
+//     background-position: center;
+//     background-size: cover;
+//     width: 100%;
+//     padding-top: 99.25%;
+//     border-radius: 7px;
+//     transition: background-image 0.3s ease-in;
+//     position: relative;
+// }
+
+// .img-container:hover .big-about-img {
+//     background-image: url('https://github.com/sararuda100/portfolio/blob/main/docs/images/IMG_5408.JPG?raw=true');
+// }
+
+// .image-wrapper {
+//     position: absolute;
+//     top: 25px;
+//     left: 25px;
+//     right: -25px;
+//     bottom: -25px;
+//     border: 2px solid $secondary;
+//     border-radius: 7px;
+//     pointer-events: none;
+//     transition: border 0.3s ease-in-out;
+//     z-index: -1;
+// }
+
+// .img-container:hover .image-wrapper {
+//     top: 20px;
+//     left: 20px;
+//     right: -20px;
+//     bottom: -20px;
+// }
 
 /*******PART DESIGNER PART CODER LIST ITEMS
 *******************************************/
@@ -313,7 +355,7 @@ ABOUT PAGE*****
 .contact-button{
     background-color: $transparant;
     margin-top: 6rem;
-    border: 1px dotted $secondary;
+    border: 1.5px dotted $secondary;
     border-radius: 40px;
     color: $secondary;
     padding: 0.5rem 1rem;
