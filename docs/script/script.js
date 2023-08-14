@@ -1,23 +1,4 @@
 window.addEventListener('load', function(){
-    
-   // Get the element that needs the hover image change
-    const imgContainer = document.querySelector('.img-container');
-
-    // Preload the hover image
-    const hoverImageUrl = 'https://github.com/sararuda100/portfolio/blob/main/docs/images/IMG_5408.JPG?raw=true';
-    const hoverImage = new Image();
-    hoverImage.src = hoverImageUrl;
-
-    // Adding hover event listener
-    imgContainer.addEventListener('mouseover', () => {
-        imgContainer.style.backgroundImage = `url(${hoverImageUrl})`;
-        imgContainer.style.borderRadius = '7px';
-    });
-
-    // Resetting the background image on mouseout
-    imgContainer.addEventListener('mouseout', () => {
-        imgContainer.style.backgroundImage = '';
-    });
 
 
     // Get the current page URL
@@ -44,7 +25,12 @@ window.addEventListener('load', function(){
         "#ccd6f6"
     ];
 
-    new Chart("myChart", {
+    //gettint canvas element
+    let check = document.querySelector('#myChart');
+
+    //check to see if element exists, to get rid of errors on other pages
+    if(check){
+         new Chart("myChart", {
         type: "pie",
         data: {
             labels: xValues,
@@ -60,9 +46,13 @@ window.addEventListener('load', function(){
             }
         }
     });
+    }
 
     const randomFactsContainer = document.querySelector('.random-facts');
 
+    //check to get rid of site error when element doesn't exist
+    if(randomFactsContainer){
+        
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -78,6 +68,34 @@ window.addEventListener('load', function(){
     });
 
     observer.observe(randomFactsContainer);
+
+
+    }
+
+    // Get the element that needs the hover image change
+    const imgContainer = document.querySelector('.img-container');
+
+    
+    // Preload the hover image
+    const hoverImageUrl = 'https://github.com/sararuda100/portfolio/blob/main/docs/images/IMG_5408.JPG?raw=true';
+    const hoverImage = new Image();
+    hoverImage.src = hoverImageUrl;
+
+    if(imgContainer){
+        
+        // Adding hover event listener
+        imgContainer.addEventListener('mouseover', () => {
+            imgContainer.style.backgroundImage = `url(${hoverImageUrl})`;
+            imgContainer.style.borderRadius = '7px';
+        });
+
+        // Resetting the background image on mouseout
+        imgContainer.addEventListener('mouseout', () => {
+            imgContainer.style.backgroundImage = '';
+        });
+
+
+    }
 
 });
 
