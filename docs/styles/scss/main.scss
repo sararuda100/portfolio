@@ -555,6 +555,55 @@ ABOUT PAGE*****
     display: block;
 }
 
+.singleView{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.843); /* Dark overlay */
+    z-index: 9999; /* Place it above everything else */
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    // text-align: center;
+}
+
+.close-button{
+    background-color: $transparant;
+    margin-top: 2rem;
+    border: 1.5px dotted $secondary;
+    border-radius: 40px;
+    color: $secondary;
+    padding: 0.5rem 1rem;
+    font-family: 'Oxygen Mono', monospace;
+}
+
+.close-button:hover{
+    background-color: $secondary-hover;
+    transition: 0.4s ease-in-out;
+}
+
+// .project-details-content{
+//     width: 75% !important;
+// }
+
+// .project-details-image{
+//     width: 75%;
+//     height: auto;
+// }
+
+.project-details-image{
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .description-element{
+        width: 90%;
+        text-align: center;
+    }
+
 /*******
 *
 *   MEDIA QUERIES
@@ -602,6 +651,20 @@ ABOUT PAGE*****
         height: 300px;
         width: auto;
         object-fit: cover !important;
+    }
+
+    .project-details-content{
+        max-height: 90%;
+        max-width: 80%;
+    }
+
+    .project-details-image{
+        width: 50%;
+    }
+
+    .description-element{
+        width: 50%;
+        text-align: left !important;
     }
 }
 

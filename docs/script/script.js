@@ -97,6 +97,98 @@ window.addEventListener('load', function(){
 
     }
 
+    /*
+    
+    * FOR DISPLAYING PROJECT DETAILS
+    
+    */
+    // Get the project details container
+// const projectDetailsContainer = document.querySelector('.project-details');
+
+// // Get all card elements with the class "card-link"
+// const cardLinks = document.querySelectorAll('.card-link');
+
+// // Add event listeners to each card
+// cardLinks.forEach(cardLink => {
+//   cardLink.addEventListener('click', event => {
+//     event.preventDefault();
+
+//     // Get details from the clicked card
+//     const title = cardLink.querySelector('.kort-titel').textContent;
+//     const imageSrc = cardLink.querySelector('img').src;
+//     const description = cardLink.querySelector('.description').textContent;
+//     const date = cardLink.querySelector('.date').textContent;
+
+//     // Update the content of the project details container
+//     projectDetailsContainer.innerHTML = `
+//       <div class="project-details-content container-fluid">
+//         <h2 class="sub-heading">${title}</h2>
+//         <img src="${imageSrc}" alt="${title}" class="project-details-image" style="width: 100%;">
+//         <p>${description}</p>
+//         <p>${date}</p>
+//         <button class="close-button">Close</button>
+//       </div>
+//     `;
+
+//     const btnClose = projectDetailsContainer.querySelector('.close-button');
+
+//     projectDetailsContainer.classList.add('singleView');
+
+//     btnClose.addEventListener('click', closeSingleView);
+
+//     function closeSingleView() {
+//       projectDetailsContainer.classList.remove('singleView');
+//       projectDetailsContainer.innerHTML = '';
+//     }
+//   });
+// });
+
+const projectDetailsContainer = document.querySelector('.project-details');
+const cardLinks = document.querySelectorAll('.card-link');
+
+cardLinks.forEach(cardLink => {
+  cardLink.addEventListener('click', event => {
+    event.preventDefault();
+    const details = cardLink.querySelector('.details-info');
+    const title = cardLink.querySelector('.kort-titel').textContent;
+    const imageSrc = cardLink.querySelector('img').src;
+    const description = cardLink.querySelector('.description').textContent;
+    const date = cardLink.querySelector('.date').textContent;
+
+    // Update the content of the project details container
+    projectDetailsContainer.innerHTML = `
+      <div class="project-details-content container-fluid">
+        <h2 class="sub-heading">${title} - ${date}</h2>
+        <img src="${imageSrc}" alt="${title}" class="project-details-image">
+        <p class="description-element m-auto">${description}</p>
+        <button class="close-button">close</button>
+      </div>
+    `;
+
+    projectDetailsContainer.classList.add('singleView');
+
+    let btn = document.querySelector('.close-button');
+    btn.addEventListener('click', closeSingleView);
+    projectDetailsContainer.addEventListener('click', handleClickOutside);
+
+    function closeSingleView() {
+      projectDetailsContainer.classList.remove('singleView');
+      projectDetailsContainer.innerHTML = '';
+    }
+
+    function handleClickOutside(event) {
+      if (!projectDetailsContainer.contains(event.target)) {
+        closeSingleView();
+        projectDetailsContainer.removeEventListener('click', handleClickOutside);
+      }
+    }
+  });
 });
+
+});
+
+
+
+
 
 
