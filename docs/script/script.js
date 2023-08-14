@@ -148,7 +148,8 @@ const cardLinks = document.querySelectorAll('.card-link');
 
 cardLinks.forEach(cardLink => {
   cardLink.addEventListener('click', event => {
-    event.preventDefault();
+    // console.log(event);
+    // event.preventDefault();
     const details = cardLink.querySelector('.details-info');
     const title = cardLink.querySelector('.kort-titel').textContent;
     const imageSrc = cardLink.querySelector('img').src;
