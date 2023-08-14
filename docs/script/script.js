@@ -155,16 +155,24 @@ cardLinks.forEach(cardLink => {
     const imageSrc = cardLink.querySelector('img').src;
     const description = cardLink.querySelector('.description').textContent;
     const date = cardLink.querySelector('.date').textContent;
-
+    const hasProjectLink = cardLink.querySelector('.project-link') !== null;
     // Update the content of the project details container
-    projectDetailsContainer.innerHTML = `
-      <div class="project-details-content container-fluid">
-        <h2 class="sub-heading">${title} - ${date}</h2>
-        <img src="${imageSrc}" alt="${title}" class="project-details-image">
-        <p class="description-element m-auto">${description}</p>
-        <button class="close-button">close</button>
-      </div>
-    `;
+   
+    const link = cardLink.querySelector('.project-link');
+const href = link ? link.getAttribute('href') : ''; // Get the href attribute or an empty string if link doesn't exist
+
+// Update the content of the project details container
+projectDetailsContainer.innerHTML = `
+  <div class="project-details-content container-fluid">
+    <h2 class="sub-heading">${title} - ${date}</h2>
+    <img src="${imageSrc}" alt="${title}" class="project-details-image">
+    <p class="description-element m-auto">${description}</p>
+    <br>
+    ${link ? `<a href="${href}" target="_blank" class="project-link">Visit Website</a>` : ''}
+    <br>
+    <button class="close-button">close</button>
+  </div>
+`;
 
     projectDetailsContainer.classList.add('singleView');
 
