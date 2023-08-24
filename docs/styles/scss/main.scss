@@ -116,8 +116,30 @@ nav{
 }
 
 .fa-brands{
+    text-decoration: none;
     color: rgb(255, 255, 255);
 }
+
+.dark-mode{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.dark-mode:hover{
+    color: $hover;
+    transition: 0.3s ease-in-out;
+}
+// .fa-moon{
+//     color: rgb(255, 255, 255) !important;
+// }
+
+// .fa-moons:hover{
+//     color: $hover !important;
+// }
+
+// .dark-mode:hover{
+//     color: $hover !important;
+// }
 
 .social-list{
     display: flex;
@@ -553,7 +575,12 @@ ABOUT PAGE*****
 .card:hover .kort-titel {
     display: flex !important;
     display: block;
+    cursor: pointer;
 }
+
+// .dark-mode{
+//     background-color: $transparant !important;
+// }
 
 .singleView{
     position: fixed;

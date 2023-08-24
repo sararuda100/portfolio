@@ -97,7 +97,18 @@ nav {
 }
 
 .fa-brands {
+  text-decoration: none;
   color: rgb(255, 255, 255);
+}
+
+.dark-mode {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.dark-mode:hover {
+  color: rgb(138, 7, 209);
+  transition: 0.3s ease-in-out;
 }
 
 .social-list {
@@ -401,6 +412,7 @@ ABOUT PAGE*****
 .card:hover .kort-titel {
   display: flex !important;
   display: block;
+  cursor: pointer;
 }
 
 .singleView {
