@@ -518,11 +518,15 @@ ABOUT PAGE*****
   }
 }
 @media (min-width: 992px) {
+  .header-container {
+    max-width: 900px;
+  }
   .name {
     font-size: 6rem;
   }
   .hero {
     margin-top: 10rem;
+    max-width: 900px;
   }
 }
 
