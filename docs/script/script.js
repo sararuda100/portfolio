@@ -144,6 +144,7 @@ window.addEventListener('load', function(){
 // });
 
 const projectDetailsContainer = document.querySelector('.project-details');
+const projectContent = document.querySelector('.project-details-content');
 const cardLinks = document.querySelectorAll('.card-link');
 
 cardLinks.forEach(cardLink => {
@@ -178,19 +179,19 @@ projectDetailsContainer.innerHTML = `
 
     let btn = document.querySelector('.close-button');
     btn.addEventListener('click', closeSingleView);
-    projectDetailsContainer.addEventListener('click', handleClickOutside);
+    // projectDetailsContainer.addEventListener('click', handleClickOutside);
 
     function closeSingleView() {
       projectDetailsContainer.classList.remove('singleView');
       projectDetailsContainer.innerHTML = '';
     }
 
-    function handleClickOutside(event) {
-      if (!projectDetailsContainer.contains(event.target)) {
-        closeSingleView();
-        projectDetailsContainer.removeEventListener('click', handleClickOutside);
-      }
-    }
+    // function handleClickOutside(event) {
+    //     if (projectContent == event.target) {
+    //         closeSingleView();
+    //         projectContent.removeEventListener('click', handleClickOutside);
+    //     }
+    // }
   });
 });
 
