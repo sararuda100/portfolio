@@ -650,7 +650,7 @@ ABOUT PAGE*****
 
     .subtext{
     font-size: 1.2rem;
-}
+    }
 
     .front-link{
         margin: 1rem;
@@ -681,17 +681,16 @@ ABOUT PAGE*****
         object-fit: cover !important;
     }
 
-    .project-details-content{
-        max-height: 90%;
-        max-width: 80%;
-    }
+    .close-button {
+        margin-top: 0.5rem;
+    } 
 
-    .project-details-image{
-        width: 50%;
+    .project-details-content {
+        width: 80%;
     }
 
     .description-element{
-        width: 50%;
+        width: 90%;
         text-align: left !important;
     }
 }
@@ -728,6 +727,15 @@ ABOUT PAGE*****
     }
     .img-container{
         margin-top: 8rem;
+    }
+    
+    .project-details-image {
+        width: 70%;
+    }
+
+    .description-element{
+        width: 70%;
+        text-align: left !important;
     }
 }
 
