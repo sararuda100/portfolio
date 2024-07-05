@@ -396,6 +396,7 @@ ABOUT PAGE*****
 
 .card:hover .card-overlay {
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .kort-titel {
