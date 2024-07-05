@@ -355,7 +355,7 @@ ABOUT PAGE*****
 ********** PROJECTSS *****
 ************************/
 .project-margin {
-  margin-bottom: 2rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .section {
@@ -519,7 +519,7 @@ ABOUT PAGE*****
     margin-bottom: 10rem !important;
   }
   .project-margin {
-    margin-bottom: 3rem !important;
+    margin-bottom: 0rem !important;
   }
 }
 @media (min-width: 992px) {
