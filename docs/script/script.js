@@ -103,9 +103,9 @@ window.addEventListener('load', function(){
     // }
 
     // Preload the hover image
-const hoverImageUrl = 'https://github.com/sararuda100/portfolio/blob/main/docs/images/IMG_5408.JPG?raw=true';
-const hoverImage = new Image();
-hoverImage.src = hoverImageUrl;
+    const hoverImageUrl = 'https://github.com/sararuda100/portfolio/blob/main/docs/images/IMG_5408.JPG?raw=true';
+    const hoverImage = new Image();
+    hoverImage.src = hoverImageUrl;
 
 
     /*
