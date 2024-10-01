@@ -225,6 +225,17 @@ ABOUT PAGE*****
 /*******************************************
 ********BILD OCH BORDER, SAMT HOVER*********
 ********************************************/
+/* Preload the hover image */
+.img-container::before {
+  content: "";
+  background: url("https://github.com/sararuda100/portfolio/blob/main/docs/images/IMG_5408.JPG?raw=true") no-repeat;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+  z-index: -1;
+}
+
 .img-container {
   display: inline-block;
   width: 75%;

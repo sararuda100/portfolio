@@ -72,30 +72,41 @@ window.addEventListener('load', function(){
 
     }
 
-    // Get the element that needs the hover image change
-    const imgContainer = document.querySelector('.img-container');
+    /**
+     * 
+     * REMOVED 1/10-2024, testing new loading 17:24
+     * 
+     */
+    // // Get the element that needs the hover image change
+    // const imgContainer = document.querySelector('.img-container');
 
     
-    // Preload the hover image
-    const hoverImageUrl = 'https://github.com/sararuda100/portfolio/blob/main/docs/images/IMG_5408.JPG?raw=true';
-    const hoverImage = new Image();
-    hoverImage.src = hoverImageUrl;
+    // // Preload the hover image
+    // const hoverImageUrl = 'https://github.com/sararuda100/portfolio/blob/main/docs/images/IMG_5408.JPG?raw=true';
+    // const hoverImage = new Image();
+    // hoverImage.src = hoverImageUrl;
 
-    if(imgContainer){
+    // if(imgContainer){
         
-        // Adding hover event listener
-        imgContainer.addEventListener('mouseover', () => {
-            imgContainer.style.backgroundImage = `url(${hoverImageUrl})`;
-            imgContainer.style.borderRadius = '7px';
-        });
+    //     // Adding hover event listener
+    //     imgContainer.addEventListener('mouseover', () => {
+    //         imgContainer.style.backgroundImage = `url(${hoverImageUrl})`;
+    //         imgContainer.style.borderRadius = '7px';
+    //     });
 
-        // Resetting the background image on mouseout
-        imgContainer.addEventListener('mouseout', () => {
-            imgContainer.style.backgroundImage = '';
-        });
+    //     // Resetting the background image on mouseout
+    //     imgContainer.addEventListener('mouseout', () => {
+    //         imgContainer.style.backgroundImage = '';
+    //     });
 
 
-    }
+    // }
+
+    // Preload the hover image
+const hoverImageUrl = 'https://github.com/sararuda100/portfolio/blob/main/docs/images/IMG_5408.JPG?raw=true';
+const hoverImage = new Image();
+hoverImage.src = hoverImageUrl;
+
 
     /*
     
