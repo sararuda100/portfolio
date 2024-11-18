@@ -17,10 +17,20 @@ window.addEventListener('load', function(){
     }
     });
 
-    const darkModeButton = document.getElementById('darkMode');
-    darkModeButton.addEventListener('click', () => {
-        console.log('clicked');
-        document.body.classList.toggle('dark-mode');
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "light") {
+        document.body.classList.remove("dark-mode"); // Light mode
+    } else {
+        document.body.classList.add("dark-mode"); // Default to dark mode
+    }
+
+    // Add event listener to toggle button
+    const themeToggle = document.getElementById("darkMode");
+    themeToggle.addEventListener("click", () => {
+        const isDarkMode = document.body.classList.toggle("dark-mode");
+        // Save theme preference
+        localStorage.setItem("theme", isDarkMode ? "dark" : "light");
     });
 
     //pie chart
