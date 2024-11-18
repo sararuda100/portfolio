@@ -758,7 +758,7 @@ ABOUT PAGE*****
 }
 
 .img-animation {
-    margin-top: 25px;
+    margin-top: 20px;
   width: 200px;
   height: 150px;
 //   background-color: rgb(95, 250, 162);
@@ -812,4 +812,10 @@ background-size: cover;
       transform: rotate(-10deg);
     //   width: 150px;
     }
+}
+
+/** STORY**/
+.story{
+    display: flex;
+    
 }

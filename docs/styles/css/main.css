@@ -623,7 +623,7 @@ ABOUT PAGE*****
 }
 
 .img-animation {
-  margin-top: 25px;
+  margin-top: 20px;
   width: 200px;
   height: 150px;
   background: url("../../images/about_sam.png");
@@ -673,6 +673,10 @@ ABOUT PAGE*****
     background-size: cover;
     transform: rotate(-10deg);
   }
+}
+/** STORY**/
+.story {
+  display: flex;
 }
 
 /*# sourceMappingURL=main.css.map */
