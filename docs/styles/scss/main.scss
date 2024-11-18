@@ -758,17 +758,17 @@ ABOUT PAGE*****
 }
 
 .img-animation {
-    margin-top: 20px;
-  width: 200px;
-  height: 150px;
-//   background-color: rgb(95, 250, 162);
-background: url('../../images/about_sam.png');
-background-position: cover;
-background-size: cover;
-border-radius: 50% 50% 50% 50%;
-// z-index: 1000;
-// position: absolute;
-  animation: squareToCircle 6s 1s infinite alternate;
+    margin-top: 50px;
+    width: 200px;
+    height: 150px;
+    //   background-color: rgb(95, 250, 162);
+    background: url('../../images/about_sam.png');
+    background-position: cover;
+    background-size: cover;
+    border-radius: 50% 50% 50% 50%;
+    // z-index: 1000;
+    // position: absolute;
+    animation: squareToCircle 6s 1s infinite alternate;
 }
 
 .random-fact-list:hover{
@@ -817,5 +817,5 @@ background-size: cover;
 /** STORY**/
 .story{
     display: flex;
-    
+
 }
