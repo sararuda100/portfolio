@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm Sara Rudander, a highly motivated frontend-developer located in Karlstad Sweden">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/css/main.css">
+    <link rel="icon" type="image/logo-icon" href="images/logo_transparant.png">
+    <title>About</title>
+</head>
+<body>
+    <header class="container-fluid header-container p-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="img-fluid w-75 logo" src="images/LOGGA_KLAR.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">01. Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="about.html">02. About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">03. Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">04. Projects</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="social-container d-none d-lg-block">
+                <ul class="list-group social-list">
+                    <li class="list-group-item border-0" >
+                        <a class="social-media" target="_blank" href="https://www.linkedin.com/in/sara-rudander-281125224/"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <a class="social-media" target="_blank" href="https://www.facebook.com/sara.rudander/"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <a class="social-media" target="_blank" href="https://github.com/sararuda100"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="content">
+        <div class="container-fluid article p-4">
+            <div class="container-fluid justify-content-around d-md-flex p-0">  
+                <div class="container-fluid hero-text justify-content-center p-0">
+                    <h1 class="fw-bolder name text-responsive">About.</h1>
+                    <hr class="line-break"></hr>
+                    <h3 class="sub-heading">Hello there! I am thrilled you've landed on my website.</h3>
+                    <p class="contact-info">
+                        Allow me to introduce myself - I'm Sara, a highly motivated and ambitious developer with a strong interest for code and creativity.
+                        I approach the end of my bachelor's degree, and are currently on the lookout for a work placement where I can apply my knowledge and skills in both frontend- and backend-development. 
+                        If you have an exciting project or job opportunity in the field of development or other interesting IT-positions, I'd love to hear from you. 
+                    </p>
+                </div>
+                <div class="container-fluid text-center justify-content-center p-0">
+                    <div class="img-container justify-content-center">
+                        <div class="big-about-img">
+                            <div class="image-wrapper"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid article justify-content-center p-2 d-lg-flex">
+            <div class="designer text-center">
+                <h2 class="fw-bolder sub-heading text-responsive">Part designer</h2>
+                <ul class="list-unstyled">
+                    <li class="list-item">Usability</li>
+                    <li class="list-item">Adobe Indesign & Illustrator</li>
+                    <li class="list-item">Adobe Photoshop</li>
+                    <li class="list-item">Figma (kind of)</li>
+                </ul>
+            </div>
+            <div class="coder text-center order-md-2">
+                <h2 class="fw-bolder sub-heading text-responsive">Part coder</h2>
+                <ul class="list-unstyled">
+                    <li class="list-item">HTML/CSS/SASS</li>
+                    <li class="list-item">JavaScript</li>
+                    <li class="list-item">Tailwind/Bootstrap</li>
+                    <li class="list-item">Drinking energy drinks</li>
+                    <li class="list-item">Git/Github</li>
+                    <li class="list-item">React Js</li>
+                    <li class="list-item">C#/C/Java</li>
+                </ul>
+            </div>
+            <div class="fw-bolder sub-heading pie-chart order-md-1">
+                <canvas id="myChart" style="width:100%;max-width:500px;height:250px;" class="m-auto"></canvas>
+            </div>
+        </div>
+        <div class="container-fluid article asymmetric text-center justify-content-center p-2">
+            <div class="random-facts hover-2 opac asymmetric p-4">
+                <h2 class="fw-bolder sub-heading">Random Facts</h2>
+                <ul class="list-unstyled random-fact-list">
+                    <li class="list-item">I'm a proud movie nerd, give me an hour on this topic</li>
+                    <li class="list-item">A slow runner, but a runner no less!</li>
+                    <li class="list-item">Love a good debate</li>
+                    <li class="list-item">Coffee: top tier human creation - change my mind</li>
+                    <li class="list-item">I can solve a 10x10 rubik's cube</li>
+                    <li class="list-item">Piano keys is my happy place</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid article justify-content-center p-4">
+            <h2 class="fw-bolder sub-heading">Story</h2>
+            <p>
+                People have consistently suggested that I explore the field of programming, although I initially never considered it to be aligned with my interests. 
+                However, during the Covid pandemic, I ventured into coding through platforms like Codecademy and found myself captivated and curious to learn more.
+                After a year of living in Germany, contemplating different degrees, 
+                I eventually settled on returning to my roots and chose Karlstad University. 
+            </p>
+            <p>
+                In the autumn of 2021, I commenced my bachelor's degree journey at Karlstad University, which exceeded my expectations in terms of both its scale and enjoyment. 
+                As I've approached the end of my degree, I am enthusiastic about the possibilities for the future.
+                Looking ahead, I'm now actively seeking a job opportunity starting fall 2024. 
+                If my profile resonates with your requirements, please don't hesitate to reach out. 
+                I'm looking forward to a sit down!
+            </p>
+            <p>Check out my <a href="CV-DEV-24.pdf" target="_blank">resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+            <div class="justify-content-center text-center">
+                <form action="mailto: sararudander@hotmail.com">
+                    <input class="contact-button" type="submit" value="Say Hello">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center">
+        <div class="social-container text-center justify-content-center">
+            <ul class="list-group social-list justify-content-center">
+                <li class="list-group-item border-0" >
+                    <a class="social-media" target="_blank" href="https://www.linkedin.com/in/sara-rudander-281125224/"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li class="list-group-item border-0">
+                    <a class="social-media" target="_blank" href="https://www.facebook.com/sara.rudander/"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li class="list-group-item border-0">
+                    <a class="social-media" target="_blank" href="https://github.com/sararuda100"><i class="fa-brands fa-github"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="copy-container text-center m-4">
+            <p class="copy">&copy; 2024 Created and designed by Sara Rudander</p>
+            <a class="copy text-decoration-none" href="attributions.html" target="_blank">Attributions</a>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+    <script src="https://kit.fontawesome.com/c3b6488f6e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+</body>
+</html>

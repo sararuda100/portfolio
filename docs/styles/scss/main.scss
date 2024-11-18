@@ -1,0 +1,751 @@
+// $primary: linear-gradient(90deg, rgba(1,1,34,1) 0%, rgba(13,3,55,1) 60%, rgba(25,3,65,1) 100%);
+$primary: rgb(9, 3, 36);
+$primary-light: rgb(236, 178, 246);
+$secondary: rgb(14, 221, 152);
+$secondary-hover: rgba(7, 237, 160, 0.133);
+$light-grey: #ccd6f6;
+$grey: #8892b0;
+$hover: rgb(138, 7, 209);
+$purple: rgb(98, 7, 209);
+$transparant: rgba(0, 0, 0, 0);
+
+$primary-font: studiofeixen-variable, studiofeixen, Arial, Helvetica, sans-serif;
+$p-font: 'Inter', sans-serif;
+$secondary-font: 'Courier New', Courier, monospace;
+
+body{
+background-color: $primary;
+margin: 0;
+padding: 0;
+// background: linear-gradient(90deg, rgba(1,1,34,1) 0%, rgba(13,3,55,1) 60%, rgba(25,3,65,1) 100%);
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+hr{
+    color: white;
+    height: 3px;
+}
+
+.h3-heading{
+    color: rgba(14, 221, 152, 0.79);
+}
+
+p{
+    color: $grey;
+    font-family: $secondary-font;
+    font-size: 1em;
+    font-family: $p-font;
+}
+
+/*FÖR NAVIGERINGSBAREN*/
+nav{
+    font-family: 'Fira Code', monospace;
+}
+
+.logo{
+    max-width: 160px;
+}
+
+.navbar-toggler{
+    background-color: $primary !important;
+    color: white;
+    border: 1px solid white;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+.navbar-toggler:active{
+    border: 2px solid $secondary !important;
+    color: $secondary !important;
+}
+
+.navbar-toggler:hover{
+     border: 1.5px solid white;
+}
+
+
+.nav-link{
+    color: white;
+}
+
+
+.navbar-toggler:hover .menu-toggler,
+.nav-link:hover, 
+.active:hover,
+.show:hover{
+    color: $hover !important;
+    transition: 0.3s ease-in-out;
+}
+
+.active{
+    color: $secondary !important;
+    transition: ease-in-out 0.3s;
+}
+
+.show{
+    color: $hover !important;
+}
+
+/*FOR THE LITTLE DROP DOWN IN DROP DOWN*/
+.dropdown-menu{
+    background-color: $transparant;
+    justify-content: center;
+    text-align: center;
+}
+
+.dropdown-item{
+    color: white;
+
+}
+
+.dropdown-item:hover{
+    background-color: $transparant;
+    color: $hover;
+    transition: 0.3s ease-in-out;
+}
+
+/*SOCIAL MEDIA CONTAINER*/
+.bi-chat-right-text{
+    color: $secondary;
+}
+
+.fa-brands{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.dark-mode{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.dark-mode:hover{
+    color: $hover;
+    transition: 0.3s ease-in-out;
+}
+// .fa-moon{
+//     color: rgb(255, 255, 255) !important;
+// }
+
+// .fa-moons:hover{
+//     color: $hover !important;
+// }
+
+// .dark-mode:hover{
+//     color: $hover !important;
+// }
+
+.social-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.list-group-item{
+    background: $transparant;
+    font-size: 30px;
+}
+
+.list-group-item:hover .fa-brands{
+    color: $hover;
+    transition: 0.3s ease-in-out;
+}
+
+
+/***********************
+*******HOME PAGE********
+***********************
+***********************/
+//front-side text
+.hero{
+    margin-top: 5rem;
+}
+
+.name{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+.frontend{
+    color: $grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+
+.subtext{
+    color: $secondary;
+    margin: auto 1rem auto 1rem;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8rem;
+}
+
+/*FRONT PAGE LINK CONTAINER*/
+.front-link{
+    background-color:rgba(122, 5, 248, 0.957);
+    border-radius: 7px;
+    padding: 1rem;
+    border: 1px solid rgba(112, 40, 219, 0.802);
+    box-shadow: rgba(63, 3, 101, 0.174) 0px 3px 8px;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    margin: auto;
+    max-width: 15rem;
+    background-color: transparent;
+    border: 1px solid $secondary;
+}
+
+.front-link:hover{
+    background-color: $secondary-hover;
+    transition: 0.3s ease-in-out;
+}
+
+.link-container{
+    margin-top: 10rem;
+}
+
+.link{
+    color: $secondary;
+    font-size: 14px;
+    padding: 1rem 1.7rem;
+}
+
+
+/*************
+****FOOTER****
+**************/
+footer .fa-brands,
+footer .footer-heading{
+    color: $grey;
+    font-size: 20px;
+}
+
+footer{
+    margin-top: 12rem !important;
+}
+
+.copy{
+    font-family: 'Fira Code', monospace;
+    color: $grey;
+    font-size: 10px;
+}
+
+/**************
+CONTACT PAGE*****
+***************/
+.contact-info{
+    color: $grey !important;
+    text-decoration: none !important;
+}
+
+
+/**************
+ABOUT PAGE*****
+***************/
+
+.article{
+    margin-bottom: 6rem;
+}
+
+.hero-text{
+    margin-right: 5rem;
+}
+
+/*******************************************
+********BILD OCH BORDER, SAMT HOVER*********
+********************************************/
+/* Preload the hover image */
+.img-container::before {
+    content: '';
+    background: url('https://github.com/sararuda100/portfolio/blob/main/docs/images/IMG_5408.JPG?raw=true') no-repeat;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.img-container {
+    display: inline-block;
+    width: 75%;
+    position: relative; /* Set the container to be a positioning context */
+    margin-top: 4rem;
+}
+
+.big-about-img {
+    display: block;
+    background-image: url('https://raw.githubusercontent.com/sararuda100/portfolio/main/docs/images/IMG_5407.JPG');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 99.25%; /* 16:9 aspect ratio */
+    border-radius: 7px;
+    transition: background-image 0.2s ease-in-out;
+    position: relative; /* Set to relative to position the .image-wrapper */
+}
+
+.img-container:hover .big-about-img {
+    background-image: url('https://github.com/sararuda100/portfolio/blob/main/docs/images/IMG_5408.JPG?raw=true');
+}
+
+.image-wrapper {
+    position: absolute;
+    top: 25px; 
+    left: 25px; 
+    right: -25px;
+    bottom: -25px;
+    border: 2px solid $secondary;
+    border-radius: 7px;
+    pointer-events: none; /* Ensures the wrapper doesn't interfere with mouse events */
+    transition: border 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.img-container:hover .image-wrapper{
+    top: 20px; 
+    left: 20px; 
+    right: -20px;
+    bottom: -20px;
+}
+// .img-container {
+//     display: inline-block;
+//     width: 75%;
+//     position: relative;
+//     margin-top: 4rem;
+// }
+
+// .big-about-img {
+//     display: block;
+//     background-image: url('https://raw.githubusercontent.com/sararuda100/portfolio/main/docs/images/IMG_5407.JPG');
+//     background-position: center;
+//     background-size: cover;
+//     width: 100%;
+//     padding-top: 99.25%;
+//     border-radius: 7px;
+//     transition: background-image 0.3s ease-in;
+//     position: relative;
+// }
+
+// .img-container:hover .big-about-img {
+//     background-image: url('https://github.com/sararuda100/portfolio/blob/main/docs/images/IMG_5408.JPG?raw=true');
+// }
+
+// .image-wrapper {
+//     position: absolute;
+//     top: 25px;
+//     left: 25px;
+//     right: -25px;
+//     bottom: -25px;
+//     border: 2px solid $secondary;
+//     border-radius: 7px;
+//     pointer-events: none;
+//     transition: border 0.3s ease-in-out;
+//     z-index: -1;
+// }
+
+// .img-container:hover .image-wrapper {
+//     top: 20px;
+//     left: 20px;
+//     right: -20px;
+//     bottom: -20px;
+// }
+
+/*******PART DESIGNER PART CODER LIST ITEMS
+*******************************************/
+
+.designer{
+    margin-bottom: 4rem;
+
+    .list-unstyled{
+        .list-item{
+            color: $grey;
+        }
+    }
+}
+
+.coder{
+    margin-bottom: 4rem;
+
+    .list-unstyled{
+        .list-item{
+            color: $grey;
+        }
+    }
+}
+
+/***********************
+**********SAY HELLO*****
+************************/
+
+.contact-button{
+    background-color: $transparant;
+    margin-top: 6rem;
+    border: 1.5px dotted $secondary;
+    border-radius: 40px;
+    color: $secondary;
+    padding: 0.5rem 1rem;
+    font-family: 'Oxygen Mono', monospace;
+}
+
+.contact-button:hover{
+    background-color: $secondary-hover;
+    transition: 0.4s ease-in-out;
+}
+
+.contact-list .fa-brands{
+    color: grey !important;
+    font-size: 24px;
+}
+
+.contact-list .fa-brands:hover{
+    color: $hover !important;
+}
+
+.sub-heading{
+    font-size: 24px;
+    color: $light-grey;
+    margin-top: 1rem;
+}
+
+/**
+*
+* FOR RANDOM FACTS
+*
+*****/
+
+.random-fact-list{
+    color: $grey;
+}
+// .asymmetric{
+// 	position: relative;
+// 	background-color: $purple !important;
+// }
+
+// .asymmetric::before{
+// 	position: absolute;
+// 	content: "";
+// 	width: 100%;
+// 	height: 100%;
+// 	top: 0;
+// 	left: 0;
+// 	background-color: $purple !important;
+// 	transform-origin: top left;
+// 	transform: skewY(-3deg);
+// 	z-index: -10;
+// }
+
+// .asymmetric::after{
+// 	position: absolute;
+// 	content: "";
+// 	width: 100%;
+// 	height: 100%;
+// 	top: 0;
+// 	left: 0;
+// 	background-color: $light-grey !important;
+// 	transform-origin: bottom left;
+// 	transform: skewY(3deg);
+// 	z-index: -10;
+// }
+
+// .hover-3 {
+//   --b: 0.1em;   /* the thickness of the line */
+//   --c: #5710c1; /* the color */
+  
+//   color: #ee090900;
+//   padding-block: var(--b);
+//   background: 
+//     linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+//     linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+//   -webkit-background-clip: text,padding-box;
+//           background-clip: text,padding-box;
+//   transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+// }
+// .hover-3:hover {
+//   --_p: 100%;
+//   --_s: .3s;
+// }
+
+//src: https://css-tricks.com/css-hover-effects-background-masks-3d/
+.hover-2 {
+  --c: #21e28e; /* the color */
+  --b: .1em;    /* border length*/
+  --d: 20px;    /* the cube depth */
+  
+  --_s: calc(var(--d) + var(--b));
+  
+  color: var(--c);
+  border: solid #0000;
+  border-width: var(--b) var(--b) var(--_s) var(--_s);
+  background:
+    conic-gradient(at left var(--d)  bottom var(--d),
+      #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+    conic-gradient(at left var(--_s) bottom var(--_s),
+      #0000 90deg,var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+  transform: translate(calc(var(--d)/-1),var(--d));
+  clip-path: 
+    polygon(
+     var(--d) 0%, 
+     var(--d) 0%, 
+     100% 0%, 
+     100% calc(100% - var(--d)),
+     100% calc(100% - var(--d)),
+     var(--d) calc(100% - var(--d))
+    );
+    opacity: 0.3;
+  transition: 0.5s;
+}
+.hover-3 {
+  transform: translate(0,0);
+  clip-path: 
+    polygon(
+     0% var(--d), 
+     var(--d) 0%, 
+     100% 0%, 
+     100% calc(100% - var(--d)), 
+     calc(100% - var(--d)) 100%, 
+     0% 100%
+   );
+
+   opacity: 1;
+}
+
+.opac{
+    opacity: 0.3;
+}
+
+/***********************
+********** PROJECTSS *****
+************************/
+.project-margin{
+    margin-bottom: 1rem !important;
+}
+
+.section{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));  
+  gap: 1rem;
+}
+
+.card-link {
+    height: auto;
+    width: 300px;
+    text-decoration: none;
+    position: relative; /* Needed for absolute positioning of overlay and text */
+    overflow: hidden; /* Prevents child elements from overflowing */
+    margin-bottom: 1rem;
+}
+
+.card-overlay {
+    background-color: rgb(68, 3, 147);
+    z-index: 4;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card {
+    background-color: transparent;
+    position: relative; /* Needed for z-index to work properly */
+
+}
+
+.card:hover .card-overlay {
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card:hover img {
+   transform: scale(1.1);
+   transition: 0.2s ease-in;
+}
+
+.kort-titel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    display: none;
+    color: white; 
+    font-family: 'Fira Code', monospace;
+}
+
+.card:hover .kort-titel {
+    display: flex !important;
+    display: block;
+    cursor: pointer;
+}
+
+// .dark-mode{
+//     background-color: $transparant !important;
+// }
+
+.singleView{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.843); /* Dark overlay */
+    z-index: 9999; /* Place it above everything else */
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    // text-align: center;
+}
+
+.close-button{
+    background-color: $transparant;
+    margin-top: 2rem;
+    border: 1.5px dotted $secondary;
+    border-radius: 40px;
+    color: $secondary;
+    padding: 0.5rem 1rem;
+    font-family: 'Oxygen Mono', monospace;
+}
+
+.close-button:hover{
+    background-color: $secondary-hover;
+    transition: 0.4s ease-in-out;
+}
+
+// .project-details-content{
+//     width: 75% !important;
+// }
+
+// .project-details-image{
+//     width: 75%;
+//     height: auto;
+// }
+
+.project-details-image{
+        width: 90%;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .description-element{
+        width: 90%;
+        text-align: center;
+    }
+/*******
+*
+*   MEDIA QUERIES
+*
+*
+******/
+
+@media (min-width: 576px){
+    .name{
+        font-size: 4rem;
+    }
+
+    .frontend{
+        font-size: 2rem;
+    }
+
+    .subtext{
+    font-size: 1.2rem;
+    }
+
+    .front-link{
+        margin: 1rem;
+    }
+
+    .link{
+        padding: 1.5rem 2rem;
+    }
+
+    .contact-list .social-list{
+        margin-top: -0.5rem;
+    }
+
+    .section{
+        padding: 1.5rem;
+        max-width: 900px;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+    .img-container{
+        margin-top: 6rem;
+    }
+
+    .card img{
+        height: 300px;
+        width: auto;
+        object-fit: cover !important;
+    }
+
+    .close-button {
+        margin-top: 1rem;
+    } 
+
+    .project-details-content {
+        width: 80%;
+    }
+
+    .description-element{
+        width: 90%;
+        text-align: left !important;
+    }
+}
+
+
+@media (min-width: 768px){
+    .link{
+        padding: 1.5rem 3rem;
+    }
+    .article{
+        max-width: 900px;
+        margin-top: 4rem;
+        margin-bottom: 10rem !important;
+    }
+
+    .project-margin{
+        margin-bottom: 0rem !important;
+    }
+    
+}
+
+@media (min-width: 992px){
+    .header-container{
+        max-width: 900px;
+    }
+
+     .name{
+        font-size: 6rem;
+    }
+
+    .hero{
+        margin-top: 10rem;
+        max-width: 900px;
+    }
+    .img-container{
+        margin-top: 8rem;
+    }
+    
+    .project-details-image {
+        width: 70%;
+    }
+
+    .description-element{
+        width: 70%;
+        text-align: left !important;
+    }
+}
+
