@@ -1,5 +1,8 @@
 window.addEventListener('load', function(){
 
+    const bubble = document.querySelector('.first-paragraph svg');
+    console.log(bubble);
+    bubble.classList.add("spin");
 
     // Get the current page URL
     const currentPageUrl = window.location.href;

@@ -778,6 +778,23 @@ ABOUT PAGE*****
     animation: none;
 }
 
+.spin {
+  animation-name: spin;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1; /* Play animation only once */
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 @keyframes squareToCircle {
     0% {
       border-radius: 50% 50% 50% 50%;
