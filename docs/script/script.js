@@ -17,60 +17,124 @@ window.addEventListener('load', function(){
     }
     });
 
+    const darkModeButton = document.getElementById('darkMode');
+    darkModeButton.addEventListener('click', () => {
+        console.log('clicked');
+        document.body.classList.toggle('dark-mode');
+    });
+
+
+
+//     const darkMode = document.querySelector('.dark-mode');
+// darkMode.addEventListener('click', function () {
+//     // Get all elements on the page
+//     const allElements = document.querySelectorAll('*');
+
+//     allElements.forEach((element) => {
+//         // Get the computed background color of the element
+//         const computedStyle = window.getComputedStyle(element);
+//         const bgColor = computedStyle.backgroundColor;
+
+//         // Change white backgrounds to blue
+//         if (bgColor === 'rgb(255, 255, 255)') { // White in RGB
+//             element.style.backgroundColor = 'blue';
+//         }
+
+//         // Change dark backgrounds (e.g., black or gray) to white
+//         if (bgColor === 'rgb(0, 0, 0)' || bgColor === 'rgb(50, 50, 50)') { // Black or dark gray
+//             element.style.backgroundColor = 'white';
+//         }
+
+//         // Optionally, change text color for better contrast
+//         const textColor = computedStyle.color;
+//         if (textColor === 'rgb(255, 255, 255)') { // If text is white
+//             element.style.color = 'black'; // Change to black
+//         } else if (textColor === 'rgb(0, 0, 0)') { // If text is black
+//             element.style.color = 'white'; // Change to white
+//         }
+//     });
+// });
+
+
     //pie chart
     var xValues = ["Designer", "Coder"];
     var yValues = [35, 65];
-    var barColors = [
-        "rgb(6, 205, 139)",
-        "#ccd6f6"
-    ];
+ // Access CSS custom properties dynamically
+const barColors = [
+  getComputedStyle(document.documentElement).getPropertyValue('--secondary').trim(),
+  getComputedStyle(document.documentElement).getPropertyValue('--light-grey').trim(),
+];
 
-    //gettint canvas element
-    let check = document.querySelector('#myChart');
 
-    //check to see if element exists, to get rid of errors on other pages
-    if(check){
-         new Chart("myChart", {
-        type: "pie",
-        data: {
-            labels: xValues,
-            datasets: [{
-            backgroundColor: barColors,
-            data: yValues
-            }]
+   const ctx = document.getElementById('myChart');
+  if (ctx) {
+    chartInstance = new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ["Designer", "Coder"],
+        datasets: [{
+          backgroundColor: barColors,
+          data: [35, 65],
+        }],
+      },
+      options: {
+        title: {
+          display: false,
+          text: "Part designer part coder",
         },
-        options: {
-            title: {
-            display: false,
-            text: "Part designer part coder"
-            }
-        }
+      },
     });
-    }
+  } else {
+    console.error("Canvas element not found for pie chart");
+  }
 
-    const randomFactsContainer = document.querySelector('.random-facts');
 
-    //check to get rid of site error when element doesn't exist
-    if(randomFactsContainer){
+    // const randomFactsContainer = document.querySelector('.random-facts');
+
+    // //check to get rid of site error when element doesn't exist
+    // if(randomFactsContainer){
         
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('hover-3'); // Add the class "hover-3" to trigger the animation
-                console.log('inne i view');
-                entry.target.classList.remove('opac');
-            } else {
-                entry.target.classList.remove('hover-3');
-            }
-        });
-    }, {
-        rootMargin: '-200px 0px 0px 0px' //asjust height when triggered
+    // const observer = new IntersectionObserver(entries => {
+    //     entries.forEach(entry => {
+    //         if (entry.isIntersecting) {
+    //             entry.target.classList.add('hover-3'); // Add the class "hover-3" to trigger the animation
+    //             console.log('inne i view');
+    //             entry.target.classList.remove('opac');
+    //         } else {
+    //             entry.target.classList.remove('hover-3');
+    //         }
+    //     });
+    // }, {
+    //     rootMargin: '-200px 0px 0px 0px' //asjust height when triggered
+    // });
+
+    // observer.observe(randomFactsContainer);
+
+
+    // }
+const randomFactsContainer = document.querySelector('.random-facts');
+
+if (randomFactsContainer) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('hover-3');
+        console.log('Element in view, hover-3 added');
+      } else {
+        entry.target.classList.remove('hover-3');
+        console.log('Element out of view, hover-3 removed');
+      }
     });
+  }, {
+    rootMargin: '0px 0px -50px 0px', // Adjust trigger threshold
+  });
 
-    observer.observe(randomFactsContainer);
+  observer.observe(randomFactsContainer);
+} else {
+  console.error('random-facts container not found');
+}
 
 
-    }
 
     /**
      * 
