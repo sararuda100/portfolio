@@ -616,5 +616,63 @@ ABOUT PAGE*****
     text-align: left !important;
   }
 }
+/*NEW ANIMATION*/
+.random-facts {
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-animation {
+  margin-top: 25px;
+  width: 200px;
+  height: 150px;
+  background: url("../../images/about_sam.png");
+  background-position: cover;
+  background-size: cover;
+  border-radius: 50% 50% 50% 50%;
+  animation: squareToCircle 6s 1s infinite alternate;
+}
+
+.random-fact-list:hover {
+  animation: none;
+}
+
+@keyframes squareToCircle {
+  0% {
+    border-radius: 50% 50% 50% 50%;
+    background: url("../../images/about_sam.png");
+    background-position: cover;
+    background-size: cover;
+    transform: rotate(0deg);
+  }
+  25% {
+    border-radius: 70% 70% 30% 60%;
+    background: url("../../images/IMG_running.jpg");
+    background-position: cover;
+    background-size: cover;
+    transform: rotate(20deg);
+  }
+  50% {
+    border-radius: 40% 50% 20% 70%;
+    background: url("../../images/IMG-bread-sour.jpeg");
+    background-position: cover;
+    background-size: cover;
+    transform: rotate(30deg);
+  }
+  75% {
+    border-radius: 50% 50% 50% 40%;
+    background: url("../../images/IMG_5421.JPG");
+    background-position: cover;
+    background-size: cover;
+    transform: rotate(15deg);
+  }
+  100% {
+    border-radius: 30% 45% 50% 75%;
+    background: url("../../images/about_sam.png");
+    background-position: cover;
+    background-size: cover;
+    transform: rotate(-10deg);
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
