@@ -22,21 +22,43 @@ window.addEventListener('load', function(){
     }
     });
 
-    const savedTheme = localStorage.getItem("theme");
+    // const savedTheme = localStorage.getItem("theme");
 
-    if (savedTheme === "light") {
-        document.body.classList.remove("dark-mode"); // Light mode
+    // if (savedTheme === "light") {
+    //     document.body.classList.remove("dark-mode"); // Light mode
+    // } else {
+    //     document.body.classList.add("dark-mode"); // Default to dark mode
+    // }
+
+    // // Add event listener to toggle button
+    // const themeToggle = document.getElementById("darkMode");
+    // themeToggle.addEventListener("click", () => {
+    //     const isDarkMode = document.body.classList.toggle("dark-mode");
+    //     // Save theme preference
+    //     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+    // });
+    // Select all toggle buttons
+    const themeToggles = document.querySelectorAll(".darkMode");
+
+    // Check saved theme from localStorage and apply it
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+    document.body.classList.toggle("dark-mode", savedTheme === "dark");
     } else {
-        document.body.classList.add("dark-mode"); // Default to dark mode
+    document.body.classList.add("dark-mode"); // Default to dark mode
     }
 
-    // Add event listener to toggle button
-    const themeToggle = document.getElementById("darkMode");
-    themeToggle.addEventListener("click", () => {
+    // Add event listeners to all toggle buttons
+    themeToggles.forEach(btn => {
+    btn.addEventListener("click", () => {
+        // Toggle dark mode class on body
         const isDarkMode = document.body.classList.toggle("dark-mode");
-        // Save theme preference
+        
+        // Save the current theme to localStorage
         localStorage.setItem("theme", isDarkMode ? "dark" : "light");
     });
+    });
+
 
     //pie chart
     var xValues = ["Designer", "Coder"];
