@@ -620,6 +620,8 @@ ABOUT PAGE*****
 .random-facts {
   display: flex;
   justify-content: space-around;
+  border: 1px solid rgb(39, 37, 37);
+  margin: 10px;
 }
 
 .img-animation {
