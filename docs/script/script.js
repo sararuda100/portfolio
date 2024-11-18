@@ -23,39 +23,6 @@ window.addEventListener('load', function(){
         document.body.classList.toggle('dark-mode');
     });
 
-
-
-//     const darkMode = document.querySelector('.dark-mode');
-// darkMode.addEventListener('click', function () {
-//     // Get all elements on the page
-//     const allElements = document.querySelectorAll('*');
-
-//     allElements.forEach((element) => {
-//         // Get the computed background color of the element
-//         const computedStyle = window.getComputedStyle(element);
-//         const bgColor = computedStyle.backgroundColor;
-
-//         // Change white backgrounds to blue
-//         if (bgColor === 'rgb(255, 255, 255)') { // White in RGB
-//             element.style.backgroundColor = 'blue';
-//         }
-
-//         // Change dark backgrounds (e.g., black or gray) to white
-//         if (bgColor === 'rgb(0, 0, 0)' || bgColor === 'rgb(50, 50, 50)') { // Black or dark gray
-//             element.style.backgroundColor = 'white';
-//         }
-
-//         // Optionally, change text color for better contrast
-//         const textColor = computedStyle.color;
-//         if (textColor === 'rgb(255, 255, 255)') { // If text is white
-//             element.style.color = 'black'; // Change to black
-//         } else if (textColor === 'rgb(0, 0, 0)') { // If text is black
-//             element.style.color = 'white'; // Change to white
-//         }
-//     });
-// });
-
-
     //pie chart
     var xValues = ["Designer", "Coder"];
     var yValues = [35, 65];
