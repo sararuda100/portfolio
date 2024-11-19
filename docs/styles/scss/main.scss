@@ -179,6 +179,8 @@ nav{
   background-clip: text;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  display: inline-block;
+  font-family: "Font Awesome 6 Brands" !important;
 }
 
 .dark-mode-btn {
@@ -206,6 +208,13 @@ filter: brightness(1.5);
 //     // color: var(--hover) !important;
 //   filter: brightness(1.8); /* Slight brightness increase for hover effect */
 // }
+    /* Step 1: Common Properties
+  These styles are required to make icons render reliably */
+.fa-brands:before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
 
 .social-list{
     display: flex;
