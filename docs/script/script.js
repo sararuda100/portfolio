@@ -38,26 +38,68 @@ window.addEventListener('load', function(){
     //     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
     // });
     // Select all toggle buttons
-    const themeToggles = document.querySelectorAll(".darkMode");
+    // const themeToggles = document.querySelectorAll(".darkMode");
 
-    // Check saved theme from localStorage and apply it
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-    document.body.classList.toggle("dark-mode", savedTheme === "dark");
-    } else {
-    document.body.classList.add("dark-mode"); // Default to dark mode
-    }
+    // // Check saved theme from localStorage and apply it
+    // const savedTheme = localStorage.getItem("theme");
+    // if (savedTheme) {
+    // document.body.classList.toggle("dark-mode", savedTheme === "dark");
+    // } else {
+    // document.body.classList.add("dark-mode"); // Default to dark mode
+    // }
 
-    // Add event listeners to all toggle buttons
-    themeToggles.forEach(btn => {
-    btn.addEventListener("click", () => {
-        // Toggle dark mode class on body
-        const isDarkMode = document.body.classList.toggle("dark-mode");
+    // // Add event listeners to all toggle buttons
+    // themeToggles.forEach(btn => {
+    // btn.addEventListener("click", () => {
+    //     // Toggle dark mode class on body
+    //     const isDarkMode = document.body.classList.toggle("dark-mode");
         
-        // Save the current theme to localStorage
-        localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+    //     // Save the current theme to localStorage
+    //     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+    // });
+    // });
+//     const themeToggles = document.querySelectorAll(".darkMode");
+
+//     // Check saved theme from localStorage and apply it
+//     const savedTheme = localStorage.getItem("theme");
+
+// // Add event listeners to all toggle buttons
+// themeToggles.forEach((btn) => {
+//     btn.addEventListener("click", () => {
+//         const isLightMode = document.body.classList.toggle("light-mode"); // Toggle light mode class
+//         localStorage.setItem("theme", isLightMode ? "light" : "dark"); // Save the current theme
+//     });
+// });
+
+
+// if (savedTheme === "light") {
+//     document.body.classList.add("light-mode"); // Apply light mode if saved
+// } else {
+//     document.body.classList.remove("light-mode"); // Default to dark mode
+//     localStorage.setItem("theme", "dark"); // Save default as dark mode
+// }
+const themeToggles = document.querySelectorAll(".darkMode");
+
+// Check saved theme from localStorage and apply it
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "light") {
+    document.body.classList.add("light-mode"); // Apply light mode if saved
+} else {
+    document.body.classList.remove("light-mode"); // Default to dark mode
+    localStorage.setItem("theme", "dark"); // Save default as dark mode
+}
+
+// Remove the "theme-init" class after theme is applied
+document.body.classList.remove("theme-init");
+
+// Add event listeners to all toggle buttons
+themeToggles.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const isLightMode = document.body.classList.toggle("light-mode"); // Toggle light mode class
+        localStorage.setItem("theme", isLightMode ? "light" : "dark"); // Save the current theme
     });
-    });
+});
 
 
     //pie chart

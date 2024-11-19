@@ -20,7 +20,7 @@
   --card-overlay: rgb(68, 3, 147);
 }
 
-body.dark-mode {
+body.light-mode {
   --primary: linear-gradient(210deg, #e4f8f7, #f7e4f8, #c7fceb); /* Inverted for dark mode */
   --primary-light: rgb(9, 3, 36);
   --secondary: rgb(98, 7, 209);
@@ -37,6 +37,10 @@ body.dark-mode {
   --cube-color: rgb(98, 7, 209);
   --hover-color-light: rgb(9, 3, 36 / 0.3);
   --hover-color-dark: rgb(9, 3, 36 / 0.6);
+}
+
+body.theme-init {
+  visibility: hidden; /* Hide content during theme initialization */
 }
 
 body {
