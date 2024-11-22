@@ -32,6 +32,7 @@ $secondary-font: 'Courier New', Courier, monospace;
   --hover-color-light: rgb(255 255 255 / 0.3);
   --hover-color-dark: rgb(255 255 255 / 0.6);
   --card-overlay: rgb(68, 3, 147);
+  --single-view-background: rgba(0, 0, 0, 0.843);
 }
 
 body.light-mode {
@@ -39,7 +40,7 @@ body.light-mode {
   --primary-light: rgb(9, 3, 36);
   --secondary: rgb(98, 7, 209);
   --secondary-hover: rgba(138, 7, 209, 0.306);
-  --light-grey: rgb(50, 211, 157);
+  --light-grey: rgb(65, 71, 69);
   --grey: #404145;
   --hover: rgb(7, 237, 160);
   --purple: rgb(14, 221, 152);
@@ -52,6 +53,7 @@ body.light-mode {
   --cube-color: rgb(98, 7, 209);
   --hover-color-light: rgb(9, 3, 36 / 0.3);
   --hover-color-dark: rgb(9, 3, 36 / 0.6);
+  --single-view-background: rgba(186, 189, 205, 0.895);
 }
 
 body.theme-init {
@@ -613,7 +615,7 @@ ABOUT PAGE*****
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.843); /* Dark overlay */
+    background-color: var(--single-view-background); /* Dark overlay */
     z-index: 9999; /* Place it above everything else */
     // display: flex;
     justify-content: center;
@@ -637,9 +639,12 @@ ABOUT PAGE*****
     transition: 0.4s ease-in-out;
 }
 
-// .project-details-content{
-//     width: 75% !important;
-// }
+.project-details-content{
+    width: 75% !important;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+}
 
 // .project-details-image{
 //     width: 75%;
