@@ -33,6 +33,12 @@ $secondary-font: 'Courier New', Courier, monospace;
   --hover-color-dark: rgb(255 255 255 / 0.6);
   --card-overlay: rgb(68, 3, 147);
   --single-view-background: rgba(0, 0, 0, 0.843);
+  --surface-color: #241231;
+  --card-title: #b7b2c2;
+  --card-body: rgb(167, 148, 185);
+  --card-heading: rgb(210, 196, 212);
+  
+  --curve: 40;
 }
 
 body.light-mode {
@@ -48,6 +54,10 @@ body.light-mode {
   --white: rgb(18, 9, 58);
   --icons: linear-gradient(210deg, #f786f5, #aa76ef, #5af5c4); /* Solid white for dark mode */
   --card-overlay: rgb(135, 63, 222);
+  --surface-color: #ffffffda;
+  --card-title: #6A515E;
+  --card-body: rgb(59, 56, 56);
+  --card-heading: rgb(59, 56, 56);
 
   /* For animations */
   --cube-color: rgb(98, 7, 209);
@@ -665,10 +675,7 @@ ABOUT PAGE*****
 //     }
 /*
 CARDS TEST*/
-:root {
-  --surface-color: #fff;
-  --curve: 40;
-}
+
 
 // .cards {
 //   display: grid;
@@ -791,7 +798,7 @@ PROJECT GALLERY
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #a043ecd8; /* Optional background */
+   background-color: #a043ecd8; /* Optional background */
   color: #ffffff; /* Icon color */
 }
 
@@ -814,7 +821,7 @@ PROJECT GALLERY
 .card__title {
   font-size: 1em;
   margin: 0 0 .3em;
-  color: #6A515E;
+  color: var(--card-title);
 font-family: 'Fira Code', monospace;
 }
 
@@ -827,14 +834,14 @@ font-family: 'Fira Code', monospace;
 .card__lang, .card-type {
     padding: 0 1.9rem;
     font-size: .8em;
-    color: rgb(59, 56, 56);
+    color: var(--card-body);
     font-weight: 700;
     font-family: 'Fira Code', monospace;
 }
 
 .card__type, .project-link {
      font-size: .8em;
-    color: rgb(59, 56, 56);
+    color: var(--card-heading);
     font-weight: 700;
     padding:  0 2rem 0;
 }
@@ -872,6 +879,7 @@ font-family: 'Fira Code', monospace;
   top: 0;
   left: 0;
   width: 100%;
+  max-width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
@@ -915,6 +923,7 @@ font-family: 'Fira Code', monospace;
 .modal-image {
   margin: auto;
   max-height: 400px;
+  max-width: 100%;
   object-fit: cover;
   border-radius: 20px;
   height: auto;
