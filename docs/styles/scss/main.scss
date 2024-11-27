@@ -913,12 +913,12 @@ font-family: 'Fira Code', monospace;
 }
 
 .modal-image {
-  width: 100%;
-  height: auto;
   margin: auto;
   max-height: 400px;
-  object-fit: contain;
-  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 20px;
+  height: auto;
+//   aspect-ratio: 12 / 9; /* Bredd/höjd-förhållande */
 }
 
 .modal-link {

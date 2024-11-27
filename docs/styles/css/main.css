@@ -669,12 +669,11 @@ PROJECT GALLERY
 }
 
 .modal-image {
-  width: 100%;
-  height: auto;
   margin: auto;
   max-height: 400px;
-  object-fit: contain;
-  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 20px;
+  height: auto;
 }
 
 .modal-link {
