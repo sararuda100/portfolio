@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "title": "CGIMoving",
+    "type": "Code",
+    "description": "The CGIMoving project included implementing a redesign of an existing, internal, digital tool for registering workouts, to improve the overall health of employees at CGI. To build, I used a combination of HTML/CSS, Tailwind, JavaScript, and Flowbite, as well as Azure DevOps for repo and task-management.",
+    "year": 2024,
+    "image": "mockup-CGIMoving.png",
+    "link": "https://sararuda100.github.io/CGIMoving/",
+    "external": true,
+    "languages": ["HTML", "CSS", "Tailwind", "JavaScript", "Flowbite"]
+  },
+  {
+    "id": 2,
+    "title": "BrewBuddies",
+    "type": "Code",
+    "description": "The project included creating a concept and idea for a fictive company, and to create a website that fits the sector, stands out among competitors, but also speaks to the target group. HTML/CSS/SASS, Bootstrap, and JavaScript were used for this website. Illustrator was used for the logo.",
+    "year": 2023,
+    "image": "brewbuddies_comp.png",
+    "link": "./projects/brew-buddies/index.html",
+    "external": false,
+    "languages": ["HTML", "CSS", "SASS", "Bootstrap", "JavaScript", "Illustrator"]
+  },
+  {
+    "id": 3,
+    "title": "Showcase",
+    "type": "Code",
+    "description": "The purpose of this website was to create a platform where students could showcase their skills, get exposure and connect with like-minded individuals. It also served as a portfolio for future employers. This was a group project where we created our own WordPress theme using WordPress, HTML/CSS, JavaScript, and PHP.",
+    "year": 2023,
+    "image": "showcase_comp.png",
+    "link": null,
+    "external": false,
+    "languages": ["HTML", "CSS", "JavaScript", "PHP", "WordPress"]
+  },
+  {
+    "id": 4,
+    "title": "Car Rental Application",
+    "type": "Code",
+    "description": "A side project for a car rental application. Tech stack includes Spring Boot, Java, React, HTML, and CSS. The project also involved writing test cases, mainly for React components. The UI is customized to fit into Fortnox's design system but is not a Fortnox application. The application works locally; pull the GitHub project and follow the README.",
+    "year": 2024,
+    "image": "mockup-car-rental-home.png",
+    "link": null,
+    "external": false,
+    "languages": ["Java", "Spring Boot", "Docker", "React", "HTML", "CSS"]
+  },
+  {
+    "id": 5,
+    "title": "Pokébase",
+    "type": "Code",
+    "description": "This project's goal was to use APIs, JSON, and JavaScript to fetch and display data.",
+    "year": 2022,
+    "image": "pokebase_comp.png",
+    "link": "https://sararuda100.github.io/pokebase/",
+    "external": true,
+    "languages": ["JavaScript", "API", "JSON", "HTML", "CSS"]
+  },
+  {
+    "id": 6,
+    "title": "Hammarö Discover",
+    "type": "Design",
+    "description": "The purpose of the project was to create a design for a mobile application to increase tourism in Hammarö. Both Figma and Photoshop were used.",
+    "year": 2023,
+    "image": "front-page_phone2.png",
+    "link": null,
+    "external": false,
+    "languages": ["Figma", "Photoshop"]
+  },
+  {
+    "id": 7,
+    "title": "Poster Design",
+    "type": "Design",
+    "description": "This project focused on the importance of fonts and their emotional impact in design. Photoshop and InDesign were used.",
+    "year": 2023,
+    "image": "poster.png",
+    "link": null,
+    "external": false,
+    "languages": ["Photoshop", "InDesign"]
+  },
+  {
+    "id": 8,
+    "title": "Magazine Design",
+    "type": "Design",
+    "description": "This project involved developing a magazine concept, analyzing target and competitor groups, and creating a design tailored to a specific sector.",
+    "year": 2023,
+    "image": "magazin4-5.png",
+    "link": null,
+    "external": false,
+    "languages": ["Photoshop", "InDesign"]
+  },
+  {
+    "id": 9,
+    "title": "Campaign Poster SJ",
+    "type": "Design",
+    "description": "This poster was part of a fictive campaign project with SJ AB. The goal was to encourage investment in global environmental goals. Photoshop and InDesign were used.",
+    "year": 2023,
+    "image": "campaign_poster2.png",
+    "link": null,
+    "external": false,
+    "languages": ["Photoshop", "InDesign"]
+  },
+  {
+    "id": 10,
+    "title": "Icons in Illustrator",
+    "type": "Design",
+    "description": "These icons were created using Adobe Illustrator as part of a project to develop a new graphic profile and design system for Swennströmska Stenugnsbageri.",
+    "year": 2023,
+    "image": "icons.png",
+    "link": null,
+    "external": false,
+    "languages": ["Illustrator"]
+  }
+]

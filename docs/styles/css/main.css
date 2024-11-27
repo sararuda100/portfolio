@@ -280,7 +280,7 @@ CONTACT PAGE*****
 ABOUT PAGE*****
 ***************/
 .article {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
   background-color: var(--block);
   background: var(--block);
 }
@@ -443,115 +443,261 @@ ABOUT PAGE*****
 /***********************
 ********** PROJECTSS *****
 ************************/
-.project-margin {
-  margin-bottom: 1rem !important;
+/*
+CARDS TEST*/
+:root {
+  --surface-color: #fff;
+  --curve: 40;
 }
 
-.section {
+/*Project filtering buttons*/
+/*FRONT PAGE LINK CONTAINER*/
+.filter-button {
+  border-radius: 7px;
+  padding: 1rem;
+  box-shadow: rgba(63, 3, 101, 0.174) 0px 3px 8px;
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  margin: auto;
+  max-width: 15rem;
+  background-color: var(--transparent);
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.filter-button:hover {
+  background-color: var(--secondary-hover);
+  transition: 0.3s ease-in-out;
+}
+
+/**
+PROJECT GALLERY
+*/
+.cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-  gap: 1rem;
-}
-
-.card-link {
-  height: auto;
-  width: 300px;
-  text-decoration: none;
-  position: relative; /* Needed for absolute positioning of overlay and text */
-  overflow: hidden; /* Prevents child elements from overflowing */
-  margin-bottom: 1rem;
-}
-
-.card-overlay {
-  background-color: var(--card-overlay);
-  z-index: 4;
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  grid-template-columns: 1fr; /* Default: en kolumn */
+  gap: 1rem; /* Avstånd mellan korten */
+  padding: 0;
+  list-style-type: none;
 }
 
 .card {
-  background-color: var(--transparent);
-  position: relative; /* Needed for z-index to work properly */
+  position: relative;
+  display: block;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+  width: 100%; /* Tar upp hela bredden av kolumnen */
+  min-width: 320px;
+  height: auto;
+  aspect-ratio: 12/9; /* Bredd/höjd-förhållande */
 }
 
-.card:hover .card-overlay {
-  opacity: 0.8;
-  cursor: pointer;
-  transform: scale(1.1);
+.card__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-.card:hover img {
-  transform: scale(1.1);
-  transition: 0.2s ease-in;
-}
-
-.kort-titel {
+.card__overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-  display: none;
-  color: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--surface-color);
+  transform: translateY(100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 1em 2em 1em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
+}
+
+.card__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem; /* Adjust icon size */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(160, 67, 236, 0.8470588235); /* Optional background */
+  color: #ffffff; /* Icon color */
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 0.3em;
+  color: #6A515E;
   font-family: "Fira Code", monospace;
 }
 
-.card:hover .kort-titel {
-  display: flex !important;
-  display: block;
-  cursor: pointer;
+.card__date {
+  font-size: 0.8em;
+  color: #D7BDCA;
+  margin-bottom: 0;
 }
 
-.singleView {
+.card__lang, .card-type {
+  padding: 0 1.9rem;
+  font-size: 0.8em;
+  color: rgb(59, 56, 56);
+  font-weight: 700;
+  font-family: "Fira Code", monospace;
+}
+
+.card__type, .project-link {
+  font-size: 0.8em;
+  color: rgb(59, 56, 56);
+  font-weight: 700;
+  padding: 0 2rem 0;
+}
+
+.card__description {
+  padding: 0 2rem 1.5rem;
+  margin: 0;
+  color: #D7BDCA;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  font-size: 0.85em;
+}
+
+.project-link i {
+  margin-left: 0.5rem;
+}
+
+.filter-button {
+  border-radius: 7px;
+  padding: 0.5rem 1rem;
+  box-shadow: rgba(63, 3, 101, 0.174) 0px 3px 8px;
+  font-family: "Fira Code", monospace;
+  font-size: 0.8rem;
+  margin: auto;
+  max-width: 15rem;
+  background-color: var(--transparent);
+  border: 1px solid var(--secondary);
+}
+
+/* PROJECT MODAL POP-UP*/
+.modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--single-view-background); /* Dark overlay */
-  z-index: 9999; /* Place it above everything else */
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  /* display: none; */
   justify-content: center;
   align-items: center;
-  overflow-y: auto;
+  z-index: 1000;
 }
 
-.close-button {
-  background-color: var(--transparent);
-  margin-top: 2rem;
-  border: 1.5px dotted var(--secondary);
-  border-radius: 40px;
-  color: var(--secondary);
-  padding: 0.5rem 1rem;
+.modal p {
   font-family: "Oxygen Mono", monospace;
+  padding: 0.5rem;
 }
 
-.close-button:hover {
-  background-color: var(--secondary-hover);
-  transition: 0.4s ease-in-out;
+.modal h2 {
+  padding-top: 1.1rem;
 }
 
-.project-details-content {
-  width: 75% !important;
-  background-color: white;
+.modal-content {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 70rem;
+  max-height: 80%;
+  overflow-y: auto;
+  /* text-align: center; */
+  position: relative;
+  margin: 5rem auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.modal-link {
+  border-radius: 7px;
   padding: 1rem;
-  border-radius: 20px;
+  box-shadow: rgba(63, 3, 101, 0.174) 0px 3px 8px;
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  margin: auto;
+  max-width: 16rem;
+  background-color: var(--transparent);
+  border: 1px solid var(--secondary);
 }
 
-.project-details-image {
-  width: 90%;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+.modal-link:hover {
+  background-color: var(--secondary-hover);
+  transition: 0.3s ease-in-out;
 }
 
-.description-element {
-  width: 90%;
-  text-align: center;
+.modal-description {
+  text-align: left;
+}
+
+.modal-link i {
+  padding: 0 0.5rem;
 }
 
 /*******
@@ -588,11 +734,6 @@ ABOUT PAGE*****
   .img-container {
     margin-top: 6rem;
   }
-  .card img {
-    height: 300px;
-    width: auto;
-    object-fit: cover !important;
-  }
   .close-button {
     margin-top: 1rem;
   }
@@ -615,6 +756,12 @@ ABOUT PAGE*****
   }
   .project-margin {
     margin-bottom: 0rem !important;
+  }
+  .cards {
+    max-width: 900px;
+    margin-top: 4rem;
+    margin-bottom: 10rem !important;
+    margin: auto;
   }
 }
 @media (min-width: 992px) {
@@ -717,6 +864,13 @@ ABOUT PAGE*****
 /** STORY**/
 .story {
   display: flex;
+}
+
+/* För skärmar som är minst 600px breda: två kolumner */
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamiskt antal kolumner */
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
