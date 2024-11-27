@@ -19,10 +19,11 @@
   --hover-color-dark: rgb(255 255 255 / 0.6);
   --card-overlay: rgb(68, 3, 147);
   --single-view-background: rgba(0, 0, 0, 0.843);
-  --surface-color: #241231;
-  --card-title: #b7b2c2;
-  --card-body: rgb(167, 148, 185);
-  --card-heading: rgb(210, 196, 212);
+  --surface-color: #122731;
+  --card-title: rgb(196, 211, 212);
+  --card-body: rgb(56, 195, 153);
+  --card-heading: rgb(196, 211, 212);
+  --card-thumbnail-background: #3c3d3dd8;
   --curve: 40;
 }
 
@@ -48,6 +49,7 @@ body.light-mode {
   --hover-color-light: rgb(9, 3, 36 / 0.3);
   --hover-color-dark: rgb(9, 3, 36 / 0.6);
   --single-view-background: rgba(186, 189, 205, 0.895);
+  --card-thumbnail-background: #a043ecd8;
 }
 
 body.theme-init {
@@ -554,6 +556,9 @@ PROJECT GALLERY
   border-radius: 50%;
   background-color: rgba(160, 67, 236, 0.8470588235); /* Optional background */
   color: #ffffff; /* Icon color */
+  background-color: rgba(60, 61, 61, 0.8470588235); /* Optional background */
+  background-color: var(--card-thumbnail-background);
+  color: #ebebeb; /* Icon color */
 }
 
 .card__arc path {
