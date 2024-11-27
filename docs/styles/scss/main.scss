@@ -914,8 +914,10 @@ font-family: 'Fira Code', monospace;
 
 .modal-image {
   width: 100%;
-  max-height: 300px;
-  object-fit: cover;
+  height: auto;
+  margin: auto;
+  max-height: 400px;
+  object-fit: contain;
   border-radius: 10px;
 }
 
